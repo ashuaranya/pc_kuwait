@@ -1,0 +1,177 @@
+.woocommerce-products-wizard-form {
+    & + & {
+        margin-top: $form-next-to-form-margin;
+        padding-top: $form-next-to-form-padding;
+        border-top: $form-next-to-form-border;
+    }
+
+    &-description {
+        @include clearfix();
+        @include media-breakpoint-down(xs) {
+            margin-top: $spacer-md;
+        }
+    }
+
+    &-controls {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &:empty {
+            display: none;
+        }
+    }
+
+    &-filter {
+        flex: 100%;
+        margin-bottom: $spacer-md;
+
+        &.panel.card {
+            // wc single product tabs CSS overwrite
+            float: none;
+            width: auto;
+        }
+
+        &-content {
+            &[aria-expanded="false"] {
+                display: none;
+            }
+
+            &:target {
+                display: block;
+            }
+        }
+
+        &-toggle {
+            display: block;
+            color: inherit;
+
+            &[aria-expanded="true"] {
+                &::after {
+                    transform: rotate(-180deg);
+                }
+            }
+
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                margin-left: $spacer-sm;
+                border-width: 5px 5px 0 5px;
+                border-style: solid;
+                border-color: currentColor transparent transparent transparent;
+                vertical-align: middle;
+                transition: transform 0.25s ease-in-out;
+            }
+        }
+
+        &-field {
+            &.is-image-radio,
+            &.is-image-checkbox {
+                .woocommerce-products-wizard-form-filter-field-value {
+                    display: inline-block;
+                    padding-right: $spacer-sm;
+                    padding-left: $spacer-sm;
+                    cursor: pointer;
+                    vertical-align: top;
+                    text-align: center;
+
+                    &-label {
+                        position: relative;
+                        display: block;
+                        cursor: pointer;
+                    }
+
+                    &-thumbnail {
+                        display: block;
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0 auto $spacer-sm;
+                        padding: $spacer-sm;
+                        border: $form-filter-field-thumbnail-border;
+                        border-radius: $form-filter-field-thumbnail-border-radius;
+
+                        &:hover,
+                        &:focus {
+                            border-color: $form-filter-field-thumbnail-active-border-color;
+                        }
+                    }
+
+                    &-name {
+                        font-weight: normal;
+
+                        &::before {
+                            @extend %icon;
+
+                            position: absolute;
+                            top: 0.5rem;
+                            right: 0.5rem;
+                            width: 1.25rem;
+                            height: 1.25rem;
+                            border-radius: 50%;
+                            color: $form-filter-field-thumbnail-active-icon-color;
+                            background-color: $form-filter-field-thumbnail-active-icon-bg;
+                            font-size: 0.75em;
+                            text-align: center;
+                            line-height: 1.25rem;
+                        }
+                    }
+
+                    &-input {
+                        &:checked {
+                            & ~ .woocommerce-products-wizard-form-filter-field-value-thumbnail {
+                                border-color: $form-filter-field-thumbnail-active-border-color;
+                            }
+
+                            & ~ .woocommerce-products-wizard-form-filter-field-value-name::before {
+                                content: icon-char(tick);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-footer {
+            text-align: right;
+        }
+    }
+
+    &-pagination {
+        &-list {
+            width: 100%;
+            margin-left: 0;
+
+            &.pagination {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    &-table {
+        &-item {
+            &-title {
+                $self: &;
+
+                @at-root label#{$self} {
+                    display: inline;
+                }
+            }
+
+            &-thumbnail-wrapper {
+                @include media-breakpoint-up(sm) {
+                    text-align: center;
+                }
+
+                .woocommerce-products-wizard-form-item-thumbnail {
+                    display: inline-block;
+                    max-width: 100%;
+                    margin: 0;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}

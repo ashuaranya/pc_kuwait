@@ -1,0 +1,107 @@
+2021-02-12T06:27:27+00:00 CRITICAL Uncaught Error: Class 'Template' not found in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:15
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitnami/apps/wor in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 15
+
+2021-02-12T06:28:51+00:00 CRITICAL Uncaught Error: Class 'Template' not found in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:15
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitnami/apps/wor in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 15
+
+2021-02-12T07:18:56+00:00 CRITICAL Uncaught Error: Call to undefined function push() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:29
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitnami/a in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 29
+
+2021-02-12T07:25:49+00:00 CRITICAL Uncaught Error: Call to undefined function get_data() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:29
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitna in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 29
+
+2021-02-12T07:27:00+00:00 CRITICAL Uncaught Error: Call to undefined function get_data() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:31
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitna in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 31
+
+2021-02-12T07:27:02+00:00 CRITICAL Uncaught Error: Call to undefined function get_data() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:31
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitna in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 31
+
+2021-02-12T07:27:15+00:00 CRITICAL syntax error, unexpected '}' in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/admin-menus/class-edit-menu.php(213) : eval()'d code on line 32
+
+2021-02-12T07:30:24+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:31
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /o in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 31
+
+2021-02-12T07:30:34+00:00 CRITICAL Uncaught Error: Call to a member function get_data() on array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:31
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): get_product_by_step()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /o in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 31
+
+2021-02-12T19:37:51+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+

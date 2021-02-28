@@ -1,0 +1,130 @@
+// Bootstrap 4 variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #007bff !default;
+$secondary: $gray-600 !default;
+$success: #28a745 !default;
+$info: #17a2b8 !default;
+$warning: #ffc107 !default;
+$danger: #dc3545 !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+
+$spacer: 1rem !default;
+$spacers: (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3)
+) !default;
+
+$body-bg: $white !default;
+$body-color: $gray-900 !default;
+
+$font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * .875 !default;
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: bolder !default;
+
+$font-weight-base: $font-weight-normal !default;
+$line-height-base: 1.5 !default;
+$line-height-lg: 1.5 !default;
+$line-height-sm: 1.5 !default;
+
+$text-muted: $gray-600 !default;
+
+$border-radius: .25rem !default;
+
+$component-active-bg: $primary !default;
+
+$input-btn-focus-width: .2rem !default;
+$input-btn-focus-color: rgba($component-active-bg, .25) !default;
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color !default;
+
+$btn-focus-box-shadow: $input-btn-focus-box-shadow !default;
+$btn-disabled-opacity: .65 !default;
+
+$table-color: $body-color !default;
+$table-bg: null !default;
+$table-accent-bg: rgba($black, .02) !default;
+
+// WooCommerce Products Wizard variables
+$spacer-lg: map-get($spacers, 5) !default;
+$spacer-md: map-get($spacers, 3) !default;
+$spacer-sm: map-get($spacers, 2) !default;
+$spacer-xs: map-get($spacers, 1) !default;
+
+$header-stuck-color: $gray-500 !default;
+$header-stuck-bg: $body-bg !default;
+$header-stuck-box-shadow: 0 14px 10px -10px rgba(0, 0, 0, .1), 0 6px 4px -4px rgba(0, 0, 0, .2) !default;
+
+$widget-stuck-box-shadow: 0 14px 10px -10px rgba(0, 0, 0, .1), 0 6px 4px -4px rgba(0, 0, 0, .2) !default;
+
+$table-responsive-accent-bg: $table-accent-bg !default;
+
+$results-item-variation-value-border: 1px dotted $gray-300 !default;
+
+$nav-line-item-past-color: $success !default;
+$nav-line-item-past-number-color: #fff !default;
+$nav-line-item-active-color: $primary !default;
+$nav-line-item-active-number-color: #fff !default;
+$nav-line-item-active-number-box-shadow: 0 0 0 2px $primary inset !default;
+$nav-line-item-disabled-color: $text-muted !default;
+$nav-line-item-number-size: 2.5rem !default;
+$nav-line-item-number-box-shadow: 0 0 0 2px $gray-200 inset !default;
+$nav-line-item-number-bg: $gray-200 !default;
+$nav-line-item-number-margin: 0 auto $spacer-xs !default;
+$nav-line-item-number-font-size: 1em !default;
+$nav-line-item-number-font-weight: bolder !default;
+$nav-line-item-connect-line: 6px solid $gray-200 !default;
+
+$form-next-to-form-margin: $spacer-md !default;
+$form-next-to-form-padding: $spacer-md !default;
+$form-next-to-form-border: 1px solid $gray-300 !default;
+$form-filter-field-thumbnail-border: 1px solid $gray-200 !default;
+$form-filter-field-thumbnail-border-radius: $border-radius !default;
+$form-filter-field-thumbnail-active-border-color: $primary !default;
+$form-filter-field-thumbnail-active-icon-color: #fff !default;
+$form-filter-field-thumbnail-active-icon-bg: $success !default;
+
+$form-item-title-font-size: 1.1rem !default;
+$form-item-price-font-size: 1.25rem !default;
+
+$custom-scrollbar-size: 16px !default;
+$custom-scrollbar-bg: #fff !default;
+$custom-scrollbar-track-bg: #fff !default;
+$custom-scrollbar-track-hover-bg: #fff !default;
+$custom-scrollbar-thumb-border: 5px solid $custom-scrollbar-bg !default;
+$custom-scrollbar-thumb-bg: $gray-400 !default;
+$custom-scrollbar-thumb-hover-bg: $gray-500 !default;
+
+$no-ui-slider-size: 6px !default;
+$no-ui-slider-handle-border: 1px solid darken($gray-200, 20%) !default;
+$no-ui-slider-handle-bg: #fff !default;
+$no-ui-slider-handle-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3) !default;
+$no-ui-slider-handle-active-bg: $gray-200 !default;
+$no-ui-slider-handle-size: 18px !default;
+$no-ui-slider-border-radius: $border-radius !default;
+$no-ui-slider-bg: $gray-200 !default;
+$no-ui-slider-connect-bg: $primary !default;
+$no-ui-slider-tooltip-bg: $primary !default;
+$no-ui-slider-tooltip-color: #fff !default;
+$no-ui-slider-tooltip-padding: 0 0.5rem !default;
+$no-ui-slider-tooltip-border-radius: $border-radius !default;

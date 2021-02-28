@@ -1,0 +1,136 @@
+/*
+ Theme Name:    Electro Child
+ Theme URI:     https://themeforest.net/item/electro-electronics-store-woocommerce-theme/15720624
+ Description:   This is the child theme of Electro
+ Author:        MadrasThemes
+ Author URI:    https://madrasthemes.com/
+ Template:      electro
+ Version:       2.7.2
+ License:       GNU General Public License v2 or later
+ License URI:   http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:          light, dark, two-columns, right-sidebar, responsive-layout
+ Text Domain:   electro-child
+*/
+
+
+/** Bargain Modal Popup **/
+
+#bargainModal .modal-dialog {
+    margin-top: 150px;
+}
+
+
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  margin: 0 auto;
+}
+
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps-top {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: none;
+    margin-bottom: 35px;
+    background: transparent;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps-top .woopb-step-heading, .woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps-top .woopb-step {
+    text-align: center;
+    padding: 8px 15px;
+    flex: 0 1 12%;
+    background: transparent;
+    margin: 0px;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps-top .woopb-step .woopb-step-products-added {
+    display: block;
+    text-align: center;
+    top: 0px;
+}
+/*
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps .woopb-step .woopb-step-products-added .woopb-step-product-thumb, .woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps .woopb-step-heading a.woopb-step-link {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ededed;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps .woopb-step .woopb-step-products-added-wrapper {
+    padding: 0;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps .woopb-step .woopb-step-products-added .woopb-step-product-thumb+.woopb-step-product-added {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woocommerce-product-builder-sidebar+.woocommerce-product-builder-wrapper {
+    width: 80%;
+}
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps.woopb-step-total-remove {
+    background: #ededed;
+    width: 100%;
+	display: table;
+}
+
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps.woopb-step-total-remove .woopb-step {
+    width: 50%;
+    border: 1px solid #ccc;
+    display: table-cell;
+    vertical-align: middle;
+}
+*/
+.woo_product_builder-template-default .vi-wpb-wrapper .woopb-entry-content .woopb-steps .woopb-step-active a.woopb-step-link {
+    border: 2px solid #a3d133 !important;
+}
+dd.woocommerce-products-wizard-widget-footer-cell label {
+    font-weight: 500;
+}
+dd.woocommerce-products-wizard-widget-footer-cell label>span{ font-weight: 600; }
+.woocommerce-products-wizard-widget-footer-row {
+    display: block;
+}
+.woocommerce-products-wizard-widget-footer-row span.woocommerce-Price-amount.amount
+/*, tfoot.woocommerce-products-wizard-results-table-footer .woocommerce-Price-amount*/
+{
+    display: none;
+}
+.yith_wapo_group_total .single-product .price {
+    font-size: 1.2em;
+}
+.yith-wcwl-add-to-wishlist{
+    display: none;
+}
+.add_to_wishlist::before {
+    content: none !important;
+}
+.single-product .action-buttons a.delete_item,
+.single-product .action-buttons span.separator, 
+.single-product .action-buttons a.view-wishlist {
+    color: #006dd2;
+}
+.single-product .action-buttons a.delete_item>i {
+    color: red;
+}
+.dgwt-wcas-sf-wrapp input[type=search].dgwt-wcas-search-input {
+    border-width:2px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+}
+
+.dgwt-wcas-search-wrapp .dgwt-wcas-sf-wrapp .dgwt-wcas-search-submit {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -webkit-border-bottom-right-radius: 30px;
+}

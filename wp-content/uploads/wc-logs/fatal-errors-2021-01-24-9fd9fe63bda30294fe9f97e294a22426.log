@@ -1,0 +1,109 @@
+2021-01-24T10:22:50+00:00 CRITICAL syntax error, unexpected '$brand' (T_VARIABLE) in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 731
+
+2021-01-24T10:23:39+00:00 CRITICAL syntax error, unexpected '$id' (T_VARIABLE) in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 727
+
+2021-01-24T10:26:07+00:00 CRITICAL Uncaught Error: Call to undefined function get_regular_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:728
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 728
+
+2021-01-24T10:27:53+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on bool in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:732
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 732
+
+2021-01-24T11:01:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_regular_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:731
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 731
+
+2021-01-24T11:01:34+00:00 CRITICAL Uncaught Error: Call to undefined function get_regular_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:731
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 731
+
+2021-01-24T11:01:34+00:00 CRITICAL Uncaught Error: Call to undefined function get_regular_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:731
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 731
+
+2021-01-24T11:02:12+00:00 CRITICAL Uncaught Error: Call to undefined function get_regular_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:731
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 731
+
+2021-01-24T11:09:20+00:00 CRITICAL syntax error, unexpected ',' in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 729
+
+2021-01-24T11:16:13+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_sell_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:729
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 729
+
+2021-01-24T11:16:15+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_sell_price() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php:729
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): electro_products_live_search()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(184): do_action()
+#4 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/woocommerce/functions.php on line 729
+
+2021-01-24T19:33:57+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+
+2021-01-24T19:57:50+00:00 CRITICAL Uncaught Error: Call to a member function add_fee() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:167
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): custom_cart_total()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woo-conditional-product-fees-for-checkout/woocommerce/cart/cart-totals.php(23): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2061): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_cart_totals()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php( in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 167
+
+2021-01-24T19:58:48+00:00 CRITICAL Uncaught Error: Call to a member function add_fee() on string in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:168
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): custom_cart_total()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woo-conditional-product-fees-for-checkout/woocommerce/cart/cart-totals.php(23): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(2061): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_cart_totals()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.ph in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 168
+

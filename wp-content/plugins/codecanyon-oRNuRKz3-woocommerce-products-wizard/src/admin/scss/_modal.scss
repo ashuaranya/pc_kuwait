@@ -1,0 +1,56 @@
+.wcpw-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    display: none;
+    pointer-events: none;
+
+    &.is-opened,
+    &:target {
+        display: block;
+        pointer-events: auto;
+        background: rgba(0, 0, 0, .8);
+    }
+
+    &-dialog {
+        position: relative;
+        top: 0;
+        width: 60em;
+        max-width: 100%;
+        max-height: 100vh;
+        overflow: auto;
+        margin: auto;
+        padding: 1em;
+        background-color: #fff;
+
+        &-footer {
+            position: sticky;
+            bottom: 0;
+            padding: 1em;
+            background: currentColor;
+            text-align: center;
+        }
+    }
+
+    &-close {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        display: inline-block;
+        float: right;
+        width: 1.5em;
+        height: 1.5em;
+        color: #fff;
+        background: #222;
+        line-height: 1.5em;
+        text-align: center;
+        text-decoration: none;
+    }
+}
+
+#wcpw-shared-editor-modal {
+    z-index: 100000;
+}

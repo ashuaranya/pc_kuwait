@@ -1,0 +1,83 @@
+2021-02-07T10:24:19+00:00 CRITICAL Uncaught Error: Call to undefined function WCProductsWizard\apply_filter() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php:955
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php(278): WCProductsWizard\Cart::getTotal()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(50): WCProductsWizard\Template::html()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/router.php(44): WCProd in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php on line 955
+
+2021-02-07T10:25:33+00:00 CRITICAL Uncaught Error: Call to undefined function WCProductsWizard\apply_filter() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php:955
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/widget.php(279): WCProductsWizard\Cart::getTotal()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/sidebar.php(34): WCProductsWizard\Template::html()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(38): WCPro in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php on line 955
+
+2021-02-07T11:27:26+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 166
+
+2021-02-07T11:28:20+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 166
+
+2021-02-07T11:28:28+00:00 CRITICAL syntax error, unexpected '/', expecting end of file in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 166
+
+2021-02-07T11:52:15+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:176
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): custom_fee_based_on_cart_total()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-cart.php(1852): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(272): WC_Cart->calculate_fees()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(832): WC_Cart_Totals->get_fees_from_cart()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-cart-totals.php(145): WC_Cart_Totals->calculate_fee_totals()
+#7 /opt/bitnami/apps/wordpress in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 176
+
+2021-02-07T12:29:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WCProductsWizard\Cart::itemAssemblecharges(), 0 passed in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php on line 279 and exactly 3 expected in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php:964
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php(279): WCProductsWizard\Cart::itemAssemblecharges()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(50): WCProductsWizard\Template::html()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php on line 964
+
+2021-02-07T12:32:19+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function WCProductsWizard\Cart::itemAssemblecharges(), 0 passed in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php on line 279 and exactly 3 expected in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php:964
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php(279): WCProductsWizard\Cart::itemAssemblecharges()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(50): WCProductsWizard\Template::html()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Cart.php on line 964
+
+2021-02-07T12:47:59+00:00 CRITICAL Uncaught Error: Call to a member function get_product_price() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php:225
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(50): WCProductsWizard\Template::html()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/router.php(44): WCProductsWizard\Template::html()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap... in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/result.php on line 225
+
+2021-02-07T19:33:46+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+
+2021-02-07T21:25:43+00:00 CRITICAL Uncaught Error: Call to undefined function alert() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:262
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): trigger_for_ajax_add_to_cart()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/general-template.php(3021): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/footer-v2.php(49): wp_footer()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/template.php(730): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/template.php(676): load_template()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/general-template.php(92): locate_template()
+#8 /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro/inc/structure/footer.php(14): get_footer()
+#9 /o in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 262
+
+2021-02-07T21:26:56+00:00 CRITICAL syntax error, unexpected '');' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 268
+
+2021-02-07T21:27:10+00:00 CRITICAL syntax error, unexpected '");' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 268
+
+2021-02-07T21:27:25+00:00 CRITICAL syntax error, unexpected '");' (T_CONSTANT_ENCAPSED_STRING), expecting ';' or ',' in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 268
+

@@ -1,0 +1,189 @@
+@import "modal";
+@import "thumbnail-generator";
+
+#woocommerce_products_wizard_included_scripts {
+    height: auto;
+}
+
+#wcpw-bulk-edit-fields .select2-container {
+    min-width: 100%;
+}
+
+.wcpw {
+    &-multi-select {
+        table-layout: fixed;
+
+        &-items {
+            width: 100%;
+        }
+    }
+
+    &-thumbnail {
+        &-image {
+            max-width: 150px;
+        }
+    }
+
+    &-settings {
+        &-table {
+            &-row {
+                .select2-container {
+                    min-width: 100%;
+                }
+
+                input:not([type="checkbox"]):not([type="radio"]):not([type="button"]),
+                select,
+                textarea {
+                    width: 100%;
+                }
+            }
+
+            .select2-container {
+                min-width: 100%;
+            }
+
+            input:not([type="checkbox"]):not([type="radio"]):not([type="button"]),
+            select,
+            textarea {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+
+        &-group {
+            &-content {
+                &:not(.is-visible) {
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    overflow: hidden;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            &-toggle {
+                width: 100%;
+                margin-bottom: 1em;
+
+                &.button {
+                    margin-bottom: 1em;
+                }
+            }
+        }
+    }
+
+    &-data-table {
+        counter-reset: wcpw-data-table -1;
+
+        &-item {
+            &-controls {
+                width: 2em;
+            }
+
+            &-open-modal {
+                width: 100%;
+                text-align: center;
+
+                &::before {
+                    counter-increment: wcpw-data-table;
+                    content: "#" counter(wcpw-data-table) ":";
+                }
+
+                &::after {
+                    content: attr(data-name);
+                    color: #999;
+                }
+            }
+        }
+
+        &-footer {
+            display: none;
+        }
+
+        tr[data-key="source"] {
+            &[data-value="product"] {
+                & ~ tr[data-key="category"],
+                & ~ tr[data-key="attribute"],
+                & ~ tr[data-key="attribute_values"],
+                & ~ tr[data-key="custom_field_name"],
+                & ~ tr[data-key="custom_field_value"] {
+                    display: none;
+                }
+            }
+
+            &[data-value="category"] {
+                & ~ tr[data-key="product"],
+                & ~ tr[data-key="attribute"],
+                & ~ tr[data-key="attribute_values"],
+                & ~ tr[data-key="custom_field_name"],
+                & ~ tr[data-key="custom_field_value"] {
+                    display: none;
+                }
+            }
+
+            &[data-value="attribute"] {
+                & ~ tr[data-key="product"],
+                & ~ tr[data-key="category"],
+                & ~ tr[data-key="custom_field_name"],
+                & ~ tr[data-key="custom_field_value"] {
+                    display: none;
+                }
+            }
+
+            &[data-value="custom_field"] {
+                & ~ tr[data-key="product"],
+                & ~ tr[data-key="category"],
+                & ~ tr[data-key="attribute"],
+                & ~ tr[data-key="attribute_values"],
+                & ~ tr[data-key="inner_relation"] {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &-steps-list {
+        &-item {
+            &-settings {
+                &.is-loading {
+                    opacity: 0.5;
+                    pointer-events: none;
+                    cursor: progress;
+                }
+            }
+        }
+
+        &-footer {
+            display: none;
+        }
+    }
+
+    &-step {
+        &-settings-form {
+            &-footer {
+                position: sticky;
+                bottom: 0;
+                z-index: 5;
+                padding: 1em;
+                background: currentColor;
+                text-align: center;
+            }
+
+            .select2.select2-container {
+                width: 100% !important;
+            }
+        }
+    }
+
+    &-data-table,
+    &-steps-list,
+    &-group {
+        &.wp-list-table.widefat.striped tr td {
+            position: relative;
+            display: table-cell; // prevent mobile bad view
+            padding: 15px 10px;
+        }
+    }
+}

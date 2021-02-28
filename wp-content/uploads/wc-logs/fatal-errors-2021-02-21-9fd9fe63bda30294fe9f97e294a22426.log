@@ -1,0 +1,706 @@
+2021-02-21T09:52:50+00:00 CRITICAL Uncaught Error: Call to a member function get_product_subtotal() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-request-a-quote/templates/request-quote-view.php:144
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-request-a-quote/templates/request-quote.php(26): wc_get_template()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-request-a-quote/includes/class.yith-ywraq-shortcodes.php(46): wc_get_template()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/shortcodes.php(343): YITH_YWRAQ_Shortcodes->request_quote_list()
+#5 [internal function]: do_shortcode_tag()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/shortcodes.php(218): preg_replace_callback()
+#7 /opt/bit in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-request-a-quote/templates/request-quote-view.php on line 144
+
+2021-02-21T18:05:23+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:26+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:28+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:28+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-cron.php(44): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:30+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:30+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:33+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:33+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:42+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:42+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:52+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/plugins.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:52+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:53+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/plugins.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:53+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:54+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/plugins.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:55+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:55+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:05:56+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(22): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:25+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(22): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:35+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:35+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-cron.php(44): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:35+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:06:43+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:03+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:03+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:04+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:05+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/index.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:05+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:09+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:09+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:11+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:11+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:12+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:14+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:14+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:43+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:44+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-cron.php(44): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:44+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:54+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:07:57+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(22): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:08:19+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:08:19+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:08:26+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(22): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:08:31+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:08:34+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:12+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:12+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-cron.php(44): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:13+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:16+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin-ajax.php(22): require_once('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:25+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-admin/admin.php(34): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-admin/plugins.php(10): require_once('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:25+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-blog-header.php(13): require_once('/opt/bitnami/ap...')
+#7 /opt/bitnami/apps/wordpress/htdocs/index.php(17): require('/opt/bitnami/ap...')
+#8 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:09:54+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T18:10:00+00:00 CRITICAL Uncaught Error: Call to undefined function dokan() in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:252
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): remove_dokan_frontend_vendor_registration()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-settings.php(557): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-config.php(110): require_once('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-load.php(37): require_once('/opt/bitnami/ap...')
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-login.php(12): require('/opt/bitnami/ap...')
+#7 {main}
+  thrown in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 252
+
+2021-02-21T19:43:35+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+

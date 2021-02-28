@@ -1,0 +1,261 @@
+@import "bootstrap/functions";
+@import "bootstrap/mixins";
+@import "bootstrap/variables";
+@import "variables";
+@import "mixins";
+@import "icons";
+@import "form";
+@import "form-item";
+@import "nav";
+@import "noui-slider";
+@import "results";
+@import "table-responsive";
+@import "widget";
+
+.woocommerce-products-wizard {
+    @import "reset";
+
+    margin-bottom: $spacer-md;
+
+    @supports (display: flex) {
+        &-main-row {
+            display: flex;
+            flex-wrap: wrap;
+
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    &.is-loading {
+        position: relative;
+        opacity: 0.65;
+        pointer-events: none;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 10;
+            background: url(../images/spinner.svg) no-repeat center fixed;
+        }
+    }
+
+    &-header {
+        $self: &;
+
+        text-align: right;
+
+        @at-root [dir="rtl"] #{$self} {
+            text-align: left;
+        }
+
+        &.is_stuck {
+            z-index: 5;
+            color: $header-stuck-color;
+            background-color: $header-stuck-bg;
+            box-shadow: $header-stuck-box-shadow;
+        }
+    }
+
+    &-footer {
+        $self: &;
+
+        text-align: right;
+
+        @at-root [dir="rtl"] #{$self} {
+            text-align: left;
+        }
+    }
+
+    &-sidebar {
+        flex: 1;
+
+        @include media-breakpoint-down(sm) {
+            &.col {
+                position: static;
+            }
+        }
+    }
+
+    &-controls {
+        padding: $spacer-md 0;
+        clear: both;
+
+        &:empty {
+            display: none;
+        }
+
+        .woocommerce-products-wizard-control {
+            margin-bottom: $spacer-xs;
+        }
+    }
+
+    &-control {
+        &.is-widget-toggle {
+            $self: &;
+
+            position: relative;
+            float: left;
+
+            @at-root [dir="rtl"] #{$self} {
+                float: right;
+            }
+
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(cart);
+            }
+        }
+
+        &.is-widget-toggle & {
+            &-badge {
+                position: absolute;
+                top: 0;
+                left: 100%;
+                transform: translate(-50%, -25%);
+            }
+        }
+
+        &.is-back {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(angle-left);
+            }
+        }
+
+        &.is-skip {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(curve-arrow-right);
+            }
+        }
+
+        &.is-reset {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(reload);
+            }
+        }
+
+        &.is-start,
+        &.is-next {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(angle-right);
+            }
+        }
+
+        &.is-result-pdf {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(file);
+            }
+        }
+
+        &.is-to-results {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(double-angle-right);
+            }
+        }
+
+        &.is-add-to-cart {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(cart);
+            }
+        }
+
+        &.is-update-in-cart {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(cart-reload);
+            }
+        }
+
+        &.is-edit-in-cart {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(pencil);
+            }
+        }
+
+        &.is-remove-from-cart {
+            &.icon-left::before,
+            &.icon-right::after {
+                content: icon-char(trash);
+            }
+        }
+
+        &.show-icon,
+        &.show-icon-on-mobile {
+            &.btn-sm {
+                &.icon-left::before,
+                &.icon-right::after {
+                    padding: 0 0.4em;
+                    transform: scale(1.5);
+                }
+            }
+
+            &::after,
+            &::before {
+                display: none;
+            }
+        }
+
+        &.show-icon {
+            &.icon-left::before,
+            &.icon-right::after {
+                @include icon-styles;
+
+                display: inline-block;
+                padding: 0 0.2em;
+                font-size: 0.8em;
+                transform: scale(1.2);
+            }
+        }
+
+        &.show-icon-on-mobile {
+            &.icon-left::before,
+            &.icon-right::after {
+                @include media-breakpoint-down(sm) {
+                    @include icon-styles;
+
+                    display: inline-block;
+                    padding: 0 0.2em;
+                    font-size: 0.8em;
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        &.hide-text & {
+            &-inner {
+                @include sr-only();
+            }
+        }
+
+        &.hide-text-on-mobile & {
+            &-inner {
+                @include media-breakpoint-down(sm) {
+                    @include sr-only();
+                }
+            }
+        }
+    }
+
+    &-outer-link {
+        @include icon(link, after);
+
+        &::after {
+            margin-left: $spacer-xs;
+            vertical-align: baseline;
+        }
+    }
+}

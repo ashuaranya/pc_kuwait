@@ -1,0 +1,227 @@
+.woocommerce-products-wizard-widget {
+    color: $body-color;
+    background-color: $body-bg;
+    margin-bottom: $spacer-md;
+
+    &.panel.card {
+        // wc single product tabs CSS overwrite
+        float: none;
+        width: auto;
+    }
+
+    &.is_stuck {
+        z-index: 4;
+        overflow: hidden;
+
+        @include media-breakpoint-down(sm) {
+            box-shadow: $widget-stuck-box-shadow;
+        }
+
+        &.is-position-top {
+            box-shadow: $widget-stuck-box-shadow;
+        }
+    }
+
+    &.is-position-top {
+        @include media-breakpoint-up(md) {
+            .woocommerce-products-wizard-widget-body {
+                display: flex;
+
+                .woocommerce-products-wizard-widget-body-item {
+                    border-bottom: 0;
+
+                    &:not(:last-child) {
+                        border-right: 1px solid $gray-200;
+                    }
+
+                    &.is-product,
+                    &.is-field,
+                    &.is-thumbnail {
+                        min-width: 15rem;
+                    }
+                }
+            }
+        }
+    }
+
+    &[aria-expanded="false"] {
+        display: none;
+    }
+
+    &:target {
+        display: block;
+    }
+
+    &-item {
+        $self: &;
+
+        @at-root dl#{$self} {
+            margin: 0;
+        }
+
+        &.is-product {
+            display: flex;
+        }
+
+        &-thumbnail {
+            $self: &;
+
+            flex: 0 0 5rem;
+
+            @at-root figure#{$self} {
+                margin-bottom: 0;
+            }
+
+            img.img-thumbnail {
+                margin: 0;
+            }
+        }
+
+        &-inner {
+            flex: auto;
+            padding-left: $spacer-md;
+        }
+
+        &-title {
+            $self: &;
+
+            margin-bottom: $spacer-sm;
+
+            @at-root h4#{$self} {
+                font-size: inherit;
+            }
+        }
+
+        &-control {
+            float: right;
+            margin-left: $spacer-sm;
+        }
+
+        &-data {
+            clear: both;
+        }
+
+        &-name {
+            border-bottom: 1px solid $gray-200;
+        }
+
+        &-value {
+            $self: &;
+
+            @at-root dd#{$self} {
+                margin: 0;
+            }
+        }
+
+        .variation {
+            margin-bottom: $spacer-sm;
+            font-size: $font-size-sm;
+            line-height: $line-height-sm;
+
+            dt {
+                $self: &;
+
+                float: left;
+                clear: left;
+                margin-right: $spacer-md;
+
+                @at-root [dir="rtl"] #{$self} {
+                    float: right;
+                    clear: right;
+                    margin-right: 0;
+                    margin-left: $spacer-md;
+                }
+            }
+
+            dd {
+                $self: &;
+
+                margin-bottom: 0;
+                text-align: right;
+
+                @at-root [dir="rtl"] #{$self} {
+                    text-align: left;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    &-body {
+        $self: &;
+
+        @include custom-scroll();
+
+        max-height: 100vh;
+        max-height: calc(100vh - 40px); // magic
+        overflow: auto;
+        list-style: none;
+
+        @at-root ul#{$self} {
+            margin: 0;
+            padding: 0;
+        }
+
+        &-item {
+            padding: $spacer-sm;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $gray-200;
+            }
+
+            &.is-heading {
+                display: flex;
+                align-items: center;
+                color: $body-color;
+                background-color: $gray-100;
+                font-weight: bolder;
+            }
+
+            &.is-product,
+            &.is-field,
+            &.is-thumbnail {
+                flex: 0 15rem;
+            }
+        }
+    }
+
+    &-footer {
+        &-row {
+            $self: &;
+
+            display: flex;
+            border-top: 1px solid $gray-200;
+
+            @at-root dl#{$self} {
+                margin: 0;
+            }
+        }
+
+        &-cell {
+            $self: &;
+
+            padding: $spacer-sm $spacer-md;
+
+            @at-root dd#{$self} {
+                margin: 0;
+            }
+
+            &.is-caption {
+                flex: 1;
+            }
+        }
+    }
+
+    .woocommerce-products-wizard-message {
+        margin-bottom: 0;
+    }
+}

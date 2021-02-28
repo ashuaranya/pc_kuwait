@@ -1,0 +1,162 @@
+.woocommerce-products-wizard-results {
+    @include media-breakpoint-down(xs) {
+        margin-top: $spacer-md;
+    }
+
+    &-table {
+        border: $table-border-width solid $table-border-color;
+
+        &.table {
+            td,
+            th {
+                vertical-align: middle;
+            }
+        }
+
+        &-header {
+            background-color: $table-accent-bg;
+
+            &-cell {
+                &.is-value,
+                &.is-price,
+                &.is-quantity,
+                &.is-subtotal {
+                    @include media-breakpoint-up(sm) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &-body {
+            &-cell {
+                &.is-remove {
+                    width: 1%;
+
+                    @include media-breakpoint-up(sm) {
+                        text-align: center;
+                    }
+                }
+
+                &.is-thumbnail {
+                    width: 1%;
+
+                    @include media-breakpoint-up(sm) {
+                        text-align: center;
+                    }
+                }
+
+                &.is-data {
+                    width: 50%;
+                }
+
+                &.is-price,
+                &.is-quantity,
+                &.is-subtotal {
+                    width: 10%;
+
+                    @include media-breakpoint-up(sm) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &-footer {
+            background-color: $table-accent-bg;
+
+            &-cell {
+                &.is-value {
+                    @include media-breakpoint-up(sm) {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    &-item {
+        &-remove {
+            float: none !important;
+
+            &-text {
+                @include sr-only();
+            }
+        }
+
+        &-thumbnail {
+            $self: &;
+
+            display: inline-block;
+            width: 68px;
+            vertical-align: middle;
+            text-align: center;
+
+            @at-root figure#{$self} {
+                margin: 0;
+            }
+
+            img.img-thumbnail {
+                margin: 0;
+            }
+        }
+
+        &-title {
+            display: block;
+        }
+
+        &-data {
+            &:not(:empty) {
+                margin-top: $spacer-md;
+            }
+        }
+
+        &-price {
+            @include media-breakpoint-up(md) {
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .variation {
+            margin-bottom: 0;
+
+            dt {
+                $self: &;
+
+                float: left;
+                clear: left;
+                margin-right: $spacer-md;
+
+                @at-root [dir="rtl"] #{$self} {
+                    float: right;
+                    clear: right;
+                    margin-right: 0;
+                    margin-left: $spacer-md;
+                }
+            }
+
+            dd {
+                $self: &;
+
+                margin-bottom: $spacer-md;
+                border-bottom: $results-item-variation-value-border;
+                text-align: right;
+
+                @at-root [dir="rtl"] #{$self} {
+                    text-align: left;
+                }
+
+                &::after {
+                    content: "";
+                    display: block;
+                    clear: both;
+                }
+
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

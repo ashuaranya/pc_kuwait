@@ -1,0 +1,88 @@
+.ajax-loading,
+.product-remove a.yith-ywraq-item-remove.remove {
+    display: inline-block;
+}
+
+.product-remove .ajax-loading {
+    vertical-align: text-bottom;
+}
+
+.woocommerce .related ul li.product img, .woocommerce .related ul.products li.product img.ajax-loading {
+    width: auto;
+}
+
+input#rqa_privacy {
+    display: table-cell;
+}
+
+#rqa_privacy_row label {
+    display: table-cell;
+    margin-left: 10px;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#rqa_privacy_row {
+    display: table;
+}
+
+.ywraq-privacy-wrapper {
+    background-color: #fafafa;
+    padding: 20px 20px 5px 20px;
+    margin-bottom: 20px;
+    display: block;
+    clear: both;
+}
+
+/**
+* Page
+ */
+.ywraq-form-table-wrapper.wide {
+    display: flex;
+    align-content: space-evenly;
+    flex: 0 0 auto;
+    align-items: baseline;
+}
+
+.ywraq-form-table-wrapper.wide .yith-ywraq-mail-form-wrapper {
+    flex-basis: 48%;
+    margin-left: 5%;
+}
+
+.ywraq-form-table-wrapper.wide form#yith-ywraq-form {
+    flex-basis: 48%;
+}
+
+.ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper {
+    padding: 25px;
+}
+
+/**
+YITH PROTEO
+ */
+.theme-yith-proteo .ywraq-form-table-wrapper .yith-ywraq-mail-form-wrapper {
+    background: #f5f5f5;
+}
+
+.theme-yith-proteo a.add-request-quote-button.button {
+    color: #fff;
+}
+
+.theme-yith-proteo #yith-ywraq-mail-form input[type=text],
+.theme-yith-proteo #yith-ywraq-mail-form input[type=email],
+.theme-yith-proteo #yith-ywraq-mail-form input[type=password],
+.theme-yith-proteo #yith-ywraq-mail-form select,
+.theme-yith-proteo #yith-ywraq-mail-form textarea {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .ywraq-form-table-wrapper.wide {
+        display: block;
+    }
+
+    .ywraq-form-table-wrapper.wide .yith-ywraq-mail-form-wrapper {
+        margin-left: 0;
+    }
+}

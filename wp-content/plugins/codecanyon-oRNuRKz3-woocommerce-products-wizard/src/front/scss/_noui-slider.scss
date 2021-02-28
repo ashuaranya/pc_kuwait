@@ -1,0 +1,356 @@
+/*! nouislider - 14.6.3 - 11/19/2020 */
+/* Functional styling;
+ * These styles are required for noUiSlider to function.
+ * You don't need to change these rules to apply your design.
+ */
+/* stylelint-disable */
+.wcpw-noUi-target,
+.wcpw-noUi-target * {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wcpw-noUi-target {
+    position: relative;
+}
+
+.wcpw-noUi-base,
+.wcpw-noUi-connects {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+/* Wrapper for all connect elements.
+ */
+.wcpw-noUi-connects {
+    overflow: hidden;
+    z-index: 0;
+}
+
+.wcpw-noUi-connect,
+.wcpw-noUi-origin {
+    will-change: transform;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    -webkit-transform-style: preserve-3d;
+    transform-origin: 0 0;
+    transform-style: flat;
+}
+
+.wcpw-noUi-connect {
+    height: 100%;
+    width: 100%;
+}
+
+.wcpw-noUi-origin {
+    height: 10%;
+    width: 10%;
+}
+
+/* Offset direction
+ */
+.wcpw-noUi-txt-dir-rtl.wcpw-noUi-horizontal .wcpw-noUi-origin {
+    left: 0;
+    right: auto;
+}
+
+/* Give origins 0 height/width so they don't interfere with clicking the
+ * connect elements.
+ */
+.wcpw-noUi-vertical .wcpw-noUi-origin {
+    width: 0;
+}
+
+.wcpw-noUi-horizontal .wcpw-noUi-origin {
+    height: 0;
+}
+
+.wcpw-noUi-handle {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.wcpw-noUi-touch-area {
+    height: 100%;
+    width: 100%;
+}
+
+.wcpw-noUi-state-tap .wcpw-noUi-connect,
+.wcpw-noUi-state-tap .wcpw-noUi-origin {
+    -webkit-transition: transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.wcpw-noUi-state-drag * {
+    cursor: inherit !important;
+}
+
+/* Slider size and handle placement;
+ */
+.wcpw-noUi-horizontal {
+    height: $no-ui-slider-size;
+}
+
+.wcpw-noUi-horizontal .wcpw-noUi-handle {
+    width: $no-ui-slider-handle-size;
+    height: $no-ui-slider-handle-size;
+    right: $no-ui-slider-handle-size / -2;
+    top: floor($no-ui-slider-handle-size - $no-ui-slider-size) / -2;
+}
+
+.wcpw-noUi-vertical {
+    width: $no-ui-slider-size;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-handle {
+    width: $no-ui-slider-handle-size;
+    height: $no-ui-slider-handle-size;
+    left: floor($no-ui-slider-handle-size - $no-ui-slider-size) / -2;
+    top: $no-ui-slider-handle-size / -2;
+}
+
+.wcpw-noUi-txt-dir-rtl.wcpw-noUi-horizontal .wcpw-noUi-handle {
+    left: $no-ui-slider-handle-size / -2;
+    right: auto;
+}
+
+/* Styling;
+ * Giving the connect element a border radius causes issues with using transform: scale
+ */
+.wcpw-noUi-target {
+    background: $no-ui-slider-bg;
+    border-radius: $no-ui-slider-border-radius;
+    border: 0;
+    box-shadow: none;
+    margin: floor($no-ui-slider-handle-size - $no-ui-slider-size) / 2;
+}
+
+.wcpw-noUi-connects {
+    border-radius: $no-ui-slider-border-radius;
+}
+
+.wcpw-noUi-connect {
+    background: $no-ui-slider-connect-bg;
+}
+
+/* Handles and cursors;
+ */
+.wcpw-noUi-draggable {
+    cursor: ew-resize;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-draggable {
+    cursor: ns-resize;
+}
+
+.wcpw-noUi-handle {
+    border: $no-ui-slider-handle-border;
+    border-radius: 50%;
+    background: $no-ui-slider-handle-bg;
+    cursor: pointer;
+    box-shadow: $no-ui-slider-handle-shadow;
+}
+
+.wcpw-noUi-active.wcpw-noUi-handle {
+    box-shadow: none;
+}
+
+/* Handle stripes;
+ */
+.wcpw-noUi-handle:before,
+.wcpw-noUi-handle:after {
+    display: none;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-handle:before,
+.wcpw-noUi-vertical .wcpw-noUi-handle:after {
+    width: $no-ui-slider-handle-size;
+    height: $no-ui-slider-handle-size;
+    left: floor($no-ui-slider-handle-size - $no-ui-slider-size) / -2;
+    top: $no-ui-slider-handle-size / -2;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-handle:after {
+    top: $no-ui-slider-handle-size / -2;
+}
+
+/* Disabled state;
+ */
+[disabled] .wcpw-noUi-connect {
+    background-color: $no-ui-slider-bg;
+}
+
+[disabled].wcpw-noUi-target,
+[disabled].wcpw-noUi-handle,
+[disabled] .wcpw-noUi-handle {
+    cursor: not-allowed;
+}
+
+/* Base;
+ *
+ */
+.wcpw-noUi-pips,
+.wcpw-noUi-pips * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.wcpw-noUi-pips {
+    position: absolute;
+    color: #999;
+}
+
+/* Values;
+ *
+ */
+.wcpw-noUi-value {
+    position: absolute;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.8em;
+    margin-top: 0.8em;
+}
+
+.wcpw-noUi-value-sub {
+    color: #ccc;
+    font-size: 10px;
+    margin-top: 0.6em;
+}
+
+/* Markings;
+ *
+ */
+.wcpw-noUi-marker {
+    position: absolute;
+    background: #ccc;
+}
+
+.wcpw-noUi-marker-sub {
+    background: #aaa;
+}
+
+.wcpw-noUi-marker-large {
+    background: #aaa;
+}
+
+/* Horizontal layout;
+ *
+ */
+.wcpw-noUi-pips-horizontal {
+    padding: 10px 0;
+    height: 80px;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.wcpw-noUi-value-horizontal {
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
+}
+
+.wcpw-noUi-rtl .wcpw-noUi-value-horizontal {
+    -webkit-transform: translate(50%, 50%);
+    transform: translate(50%, 50%);
+}
+
+.wcpw-noUi-marker-horizontal.wcpw-noUi-marker {
+    margin-left: -1px;
+    width: 1px;
+    height: 5px;
+}
+
+.wcpw-noUi-marker-horizontal.wcpw-noUi-marker-sub {
+    height: 10px;
+}
+
+.wcpw-noUi-marker-horizontal.wcpw-noUi-marker-large {
+    height: 15px;
+}
+
+/* Vertical layout;
+ *
+ */
+.wcpw-noUi-pips-vertical {
+    padding: 0 10px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+}
+
+.wcpw-noUi-value-vertical {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    padding-left: 25px;
+}
+
+.wcpw-noUi-rtl .wcpw-noUi-value-vertical {
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+}
+
+.wcpw-noUi-marker-vertical.wcpw-noUi-marker {
+    width: 5px;
+    height: 2px;
+    margin-top: -1px;
+}
+
+.wcpw-noUi-marker-vertical.wcpw-noUi-marker-sub {
+    width: 10px;
+}
+
+.wcpw-noUi-marker-vertical.wcpw-noUi-marker-large {
+    width: 15px;
+}
+
+.wcpw-noUi-tooltip {
+    display: block;
+    position: absolute;
+    border-radius: $no-ui-slider-tooltip-border-radius;
+    background-color: $no-ui-slider-tooltip-bg;
+    color: $no-ui-slider-tooltip-color;
+    padding: $no-ui-slider-tooltip-padding;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.wcpw-noUi-horizontal .wcpw-noUi-tooltip {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-tooltip {
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 120%;
+}
+
+.wcpw-noUi-horizontal .wcpw-noUi-origin > .wcpw-noUi-tooltip {
+    transform: translate(-50%, 0);
+    left: 50%;
+    bottom: 120%;
+}
+
+.wcpw-noUi-vertical .wcpw-noUi-origin > .wcpw-noUi-tooltip {
+    transform: translate(0, -50%);
+    top: 50%;
+    right: 120%;
+}

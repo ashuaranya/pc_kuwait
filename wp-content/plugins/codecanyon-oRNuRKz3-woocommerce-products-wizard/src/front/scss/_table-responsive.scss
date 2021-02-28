@@ -1,0 +1,53 @@
+.wcpw-table-responsive {
+    @include media-breakpoint-down(sm) {
+        &-hidden,
+        th {
+            display: none;
+        }
+
+        td {
+            $self: &;
+
+            display: block;
+            width: auto !important;
+            border-right: 0 !important;
+            border-bottom: 0 !important;
+            border-left: 0 !important;
+            text-align: right !important;
+
+            @at-root [dir="rtl"] #{$self} {
+                text-align: left;
+            }
+
+            &::before {
+                $self: &;
+
+                content: attr(data-th);
+                float: left;
+                max-width: 50%;
+                font-weight: 700;
+                text-align: left;
+
+                @at-root [dir="rtl"] #{$self} {
+                    float: right;
+                    text-align: right;
+                }
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+        }
+
+        tr {
+            &:nth-child(even) {
+                &,
+                td {
+                    background-color: $table-responsive-accent-bg;
+                }
+            }
+        }
+    }
+}

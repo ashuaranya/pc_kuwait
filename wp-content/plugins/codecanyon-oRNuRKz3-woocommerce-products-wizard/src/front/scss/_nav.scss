@@ -1,0 +1,248 @@
+.woocommerce-products-wizard-nav {
+    @include media-breakpoint-down(xs) {
+        display: none;
+    }
+
+    &-button {
+        &.btn {
+            @include media-breakpoint-up(sm) {
+                display: none;
+            }
+
+            margin-bottom: $spacer-sm;
+        }
+
+        &-thumbnail {
+            display: inline-block;
+            max-height: 1rem;
+            width: auto;
+        }
+    }
+
+    &-list {
+        $self: &;
+
+        display: flex;
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none;
+
+        @at-root ul#{$self} {
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        @at-root [dir="rtl"] #{$self} {
+            flex-direction: row-reverse;
+        }
+
+        &.nav,
+        &.is-line {
+            @include custom-scroll();
+
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+
+        &.is-tabs &,
+        &.is-pills &,
+        &.is-buttons & {
+            &-item {
+                &-button {
+                    &-thumbnail {
+                        display: inline-block;
+                        max-height: 1rem;
+                        width: auto;
+                    }
+                }
+            }
+        }
+
+        &.is-tabs {
+            align-items: flex-end;
+        }
+
+        &.is-pills {
+            .nav-link {
+                border: 0;
+                background-color: transparent;
+            }
+        }
+
+        &.is-buttons & {
+            &-item {
+                & + .woocommerce-products-wizard-nav-list-item {
+                    margin-left: $spacer-xs;
+                }
+            }
+        }
+
+        &.is-line {
+            justify-content: space-between;
+            counter-reset: is-line;
+        }
+
+        &.is-line & {
+            &-item {
+                position: relative;
+                flex: 1 0;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+
+                &:first-child {
+                    .woocommerce-products-wizard-nav-list-item-button::before {
+                        display: none;
+                    }
+                }
+
+                &:last-child {
+                    .woocommerce-products-wizard-nav-list-item-button::after  {
+                        display: none;
+                    }
+                }
+
+                &.past {
+                    color: $nav-line-item-past-color;
+
+                    .woocommerce-products-wizard-nav-list-item-button {
+                        color: $nav-line-item-past-color;
+
+                        &::before,
+                        &::after {
+                            border-color: $nav-line-item-past-color;
+                        }
+
+                        &-inner {
+                            &::before,
+                            &::after {
+                                color: $nav-line-item-past-number-color;
+                                background-color: $nav-line-item-past-color;
+                            }
+                        }
+                    }
+                }
+
+                &.active {
+                    color: $nav-line-item-active-color;
+
+                    .woocommerce-products-wizard-nav-list-item-button {
+                        color: $nav-line-item-active-color;
+                        cursor: default;
+
+                        &::before {
+                            border-color: $nav-line-item-past-color;
+                        }
+
+                        &-inner {
+                            &::before,
+                            &::after {
+                                color: $nav-line-item-active-number-color;
+                                background-color: $nav-line-item-active-color;
+                            }
+                        }
+                    }
+                }
+                
+                &.disabled {
+                    color: $nav-line-item-disabled-color;
+
+                    .woocommerce-products-wizard-nav-list-item-button {
+                        color: inherit;
+                        cursor: default;
+                    }
+                }
+
+                &-button {
+                    position: static;
+                    border: 0;
+                    background: none;
+                    padding: 0 $spacer-md;
+                    font-weight: normal;
+
+                    &:not([disabled]) {
+                        &:active,
+                        &:hover,
+                        &:focus {
+                            outline: 0;
+
+                            .woocommerce-products-wizard-nav-list-item-button-inner::before {
+                                box-shadow: $nav-line-item-active-number-box-shadow;
+                            }
+                        }
+                    }
+
+                    &::before,
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        top: $nav-line-item-number-size / 2;
+                        width: 50%;
+                        z-index: 1;
+                        border-bottom: $nav-line-item-connect-line;
+                        transform: translateY(-50%);
+                    }
+
+                    &::before {
+                        left: 0;
+                    }
+
+                    &::after {
+                        right: 0;
+                    }
+
+                    &-thumbnail {
+                        position: absolute;
+                        top: 0;
+                        left: 50%;
+                        z-index: 3;
+                        display: block;
+                        width: $nav-line-item-number-size;
+                        height: $nav-line-item-number-size;
+                        padding: 0.2rem;
+                        transform: translateX(-50%);
+
+                        & + .woocommerce-products-wizard-nav-list-item-button-inner::before {
+                            content: "";
+                        }
+                    }
+
+                    &-inner {
+                        display: block;
+
+                        &::before {
+                            content: counter(is-line);
+                            counter-increment: is-line;
+                            position: relative;
+                            z-index: 2;
+                            display: block;
+                            box-shadow: $nav-line-item-number-box-shadow;
+                            background-color: $nav-line-item-number-bg;
+                            border-radius: 50%;
+                            width: $nav-line-item-number-size;
+                            height: $nav-line-item-number-size;
+                            margin: $nav-line-item-number-margin;
+                            font-size: $nav-line-item-number-font-size;
+                            font-weight: $nav-line-item-number-font-weight;
+                            line-height: $nav-line-item-number-size;
+                            transition: box-shadow 0.25s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-item {
+            &-button {
+                &[disabled] {
+                    opacity: 0.5;
+                    cursor: default;
+                }
+
+                &-inner {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+}

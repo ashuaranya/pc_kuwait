@@ -1,0 +1,1746 @@
+# Copyright (C) 2021 WooCommerce Products Wizard
+# This file is distributed under the same license as the WooCommerce Products Wizard package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Products Wizard\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: L10N::r;L10N::e;__;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../includes/classes/Admin.php:125, ../includes/classes/Admin.php:270, ../includes/classes/Admin.php:511, ../includes/classes/Settings_Page.php:24
+msgid "Products Wizard"
+msgstr ""
+
+#: ../includes/classes/Admin.php:127, ../includes/classes/Admin.php:130
+msgid "Overwrite availability rules"
+msgstr ""
+
+#: ../includes/classes/Admin.php:278
+msgid "Options"
+msgstr ""
+
+#: ../includes/classes/Admin.php:295, ../includes/classes/Admin.php:934
+msgid "Close"
+msgstr ""
+
+#: ../includes/classes/Admin.php:325
+msgid "WooCommerce Products Wizard database update required"
+msgstr ""
+
+#: ../includes/classes/Admin.php:327
+msgid "WooCommerce Products Wizard has been updated! To keep things running smoothly, we have to update your database to the newest version."
+msgstr ""
+
+#: ../includes/classes/Admin.php:330
+msgid "Update WooCommerce Products Wizard Database"
+msgstr ""
+
+#: ../includes/classes/Admin.php:352
+msgid "WooCommerce Products Wizard database update complete. Thank you for updating to the latest version!"
+msgstr ""
+
+#: ../includes/classes/Admin.php:375
+msgid "Docs"
+msgstr ""
+
+#: ../includes/classes/Admin.php:400, ../includes/classes/Admin.php:670, ../includes/classes/Admin.php:701, ../includes/classes/Admin.php:919
+msgid "Settings"
+msgstr ""
+
+#: ../includes/classes/Admin.php:519
+msgid "This is where you can add new products wizard items."
+msgstr ""
+
+#: ../includes/classes/Admin.php:605
+msgid "Basic"
+msgstr ""
+
+#: ../includes/classes/Admin.php:612
+msgid "Using"
+msgstr ""
+
+#: ../includes/classes/Admin.php:625
+msgid "Add step"
+msgstr ""
+
+#: ../includes/classes/Admin.php:663, ../includes/classes/Admin.php:694
+msgid "Clone"
+msgstr ""
+
+#: ../includes/classes/Admin.php:715
+msgid "Set default cart content from your session"
+msgstr ""
+
+#: ../includes/classes/Admin.php:724
+msgid "Set default cart"
+msgstr ""
+
+#: ../includes/classes/Admin.php:732
+msgid "Reset default cart"
+msgstr ""
+
+#: ../includes/classes/Admin.php:736
+msgid "Use visual part of the wizard for selecting products, but do not add them to the main cart"
+msgstr ""
+
+#: ../includes/classes/Admin.php:764
+msgid "Add item"
+msgstr ""
+
+#: ../includes/classes/Admin.php:769
+msgid "Areas added:"
+msgstr ""
+
+#: ../includes/classes/Admin.php:773, ../includes/classes/Admin.php:778
+msgid "Clear"
+msgstr ""
+
+#: ../includes/classes/Admin.php:851, ../includes/classes/Settings.php:1439
+msgid "Name"
+msgstr ""
+
+#: ../includes/classes/Admin.php:858
+msgid "X placement"
+msgstr ""
+
+#: ../includes/classes/Admin.php:865
+msgid "Y placement"
+msgstr ""
+
+#: ../includes/classes/Admin.php:872
+msgid "Width"
+msgstr ""
+
+#: ../includes/classes/Admin.php:879
+msgid "Height"
+msgstr ""
+
+#: ../includes/classes/Admin.php:886, ../includes/classes/Settings.php:161
+msgid "Image"
+msgstr ""
+
+#: ../includes/classes/Admin.php:891
+msgid "Default image of area"
+msgstr ""
+
+#: ../includes/classes/Admin.php:1027
+msgid "ShortCode"
+msgstr ""
+
+#: ../includes/classes/Admin.php:1056
+msgid "Stored products in the cart: %d"
+msgstr ""
+
+#: ../includes/classes/Admin.php:1406
+msgid "More"
+msgstr ""
+
+#: ../includes/classes/Admin.php:1454
+msgid "Save"
+msgstr ""
+
+#: ../includes/classes/Core.php:188
+msgid "WooCommerce is required for WC Products Wizard"
+msgstr ""
+
+#: ../includes/classes/Form.php:1844
+msgid "« Previous"
+msgstr ""
+
+#: ../includes/classes/Form.php:1845
+msgid "Next »"
+msgstr ""
+
+#: ../includes/classes/Form.php:2008, ../includes/classes/Settings.php:2669, ../views/form/filter/fields/checkbox.php:9, ../views/form/filter/fields/image-checkbox.php:9, ../views/form/filter/fields/image-radio.php:9, ../views/form/filter/fields/inline-checkbox.php:9, ../views/form/filter/fields/inline-radio.php:9, ../views/form/filter/fields/radio.php:9, ../views/form/filter/fields/select.php:9
+msgid "Category"
+msgstr ""
+
+#: ../includes/classes/Form.php:2088, ../includes/classes/Settings.php:2670
+msgid "Tag"
+msgstr ""
+
+#: ../includes/classes/Form.php:2107, ../includes/classes/Settings.php:725, ../includes/classes/Settings.php:824, ../includes/classes/Settings.php:1446, ../includes/classes/Settings.php:2668, ../views/form/filter/fields/range.php:16
+msgid "Price"
+msgstr ""
+
+#: ../includes/classes/Form.php:2119, ../includes/classes/Settings.php:2671
+msgid "Search"
+msgstr ""
+
+#: ../includes/classes/Form.php:2136, ../includes/classes/Settings.php:92
+msgid "Attribute"
+msgstr ""
+
+#: ../includes/classes/Settings.php:60
+msgid "Availability rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:65
+msgid "Show/hide the step according the specific rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:68, ../includes/classes/Settings.php:1895
+msgid "Source"
+msgstr ""
+
+#: ../includes/classes/Settings.php:80
+msgid "Products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:86
+msgid "Categories"
+msgstr ""
+
+#: ../includes/classes/Settings.php:99
+msgid "Attribute values"
+msgstr ""
+
+#: ../includes/classes/Settings.php:104
+msgid "Define terms IDs separated by a comma"
+msgstr ""
+
+#: ../includes/classes/Settings.php:107
+msgid "Custom field name"
+msgstr ""
+
+#: ../includes/classes/Settings.php:113
+msgid "Custom field value"
+msgstr ""
+
+#: ../includes/classes/Settings.php:119
+msgid "Condition"
+msgstr ""
+
+#: ../includes/classes/Settings.php:124
+msgid "In cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:125
+msgid "Not in cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:129
+msgid "Relation within the items"
+msgstr ""
+
+#: ../includes/classes/Settings.php:134, ../includes/classes/Settings.php:144
+msgid "OR"
+msgstr ""
+
+#: ../includes/classes/Settings.php:135, ../includes/classes/Settings.php:145
+msgid "AND"
+msgstr ""
+
+#: ../includes/classes/Settings.php:139
+msgid "Relation with the next rule"
+msgstr ""
+
+#: ../includes/classes/Settings.php:149, ../includes/classes/Settings.php:1391, ../includes/classes/Settings.php:1400, ../includes/classes/Settings.php:1408, ../includes/classes/Settings.php:1418, ../includes/classes/Settings.php:1430, ../includes/classes/Settings.php:1449, ../includes/classes/Settings.php:1456, ../includes/classes/Settings.php:1465, ../includes/classes/Settings.php:1482
+msgid "Query"
+msgstr ""
+
+#: ../includes/classes/Settings.php:155
+msgid "Area name"
+msgstr ""
+
+#: ../includes/classes/Settings.php:170
+msgid "Availability rules source"
+msgstr ""
+
+#: ../includes/classes/Settings.php:171, ../includes/classes/Settings.php:172, ../includes/classes/Settings.php:173, ../includes/classes/Settings.php:174
+msgid "Keep empty to not check this field"
+msgstr ""
+
+#: ../includes/classes/Settings.php:180
+msgid "Styles including type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:183, ../includes/classes/Settings.php:976, ../includes/classes/Settings.php:1346
+msgid "For more info see the"
+msgstr ""
+
+#: ../includes/classes/Settings.php:186, ../includes/classes/Settings.php:817, ../includes/classes/Settings.php:979, ../includes/classes/Settings.php:1349
+msgid "documentation"
+msgstr ""
+
+#: ../includes/classes/Settings.php:190
+msgid "Full styles file"
+msgstr ""
+
+#: ../includes/classes/Settings.php:191
+msgid "Basic styles file"
+msgstr ""
+
+#: ../includes/classes/Settings.php:192, ../includes/classes/Settings.php:406, ../includes/classes/Settings.php:1377
+msgid "None"
+msgstr ""
+
+#: ../includes/classes/Settings.php:193
+msgid "Custom full styles file"
+msgstr ""
+
+#: ../includes/classes/Settings.php:198
+msgid "Scripts including type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:201
+msgid "Include scripts separately or in a single file"
+msgstr ""
+
+#: ../includes/classes/Settings.php:205
+msgid "Single file"
+msgstr ""
+
+#: ../includes/classes/Settings.php:206
+msgid "Multiple files"
+msgstr ""
+
+#: ../includes/classes/Settings.php:211
+msgid "Included scripts"
+msgstr ""
+
+#: ../includes/classes/Settings.php:225
+msgid "Select which files will be included with the multiple including type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:243
+msgid "Store session in the DB"
+msgstr ""
+
+#: ../includes/classes/Settings.php:246
+msgid "Tick in case of problems of the wizard's state storing"
+msgstr ""
+
+#: ../includes/classes/Settings.php:252
+msgid "Send current state hash via AJAX"
+msgstr ""
+
+#: ../includes/classes/Settings.php:255
+msgid "Might help in case of freezing of the wizard's state with caching plugins"
+msgstr ""
+
+#: ../includes/classes/Settings.php:261
+msgid "Minify custom styles"
+msgstr ""
+
+#: ../includes/classes/Settings.php:269
+msgid "Mode"
+msgstr ""
+
+#: ../includes/classes/Settings.php:275
+msgid "Simple"
+msgstr ""
+
+#: ../includes/classes/Settings.php:276
+msgid "Advanced"
+msgstr ""
+
+#: ../includes/classes/Settings.php:281
+msgid "Font size"
+msgstr ""
+
+#: ../includes/classes/Settings.php:289
+msgid "Form item title font size"
+msgstr ""
+
+#: ../includes/classes/Settings.php:297
+msgid "Form item price font size"
+msgstr ""
+
+#: ../includes/classes/Settings.php:305
+msgid "Primary color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:313
+msgid "Secondary color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:321
+msgid "Success color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:329
+msgid "Info color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:337
+msgid "Warning color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:345
+msgid "Danger color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:353
+msgid "Light color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:361
+msgid "Dark color"
+msgstr ""
+
+#: ../includes/classes/Settings.php:369
+msgid "Custom SCSS"
+msgstr ""
+
+#: ../includes/classes/Settings.php:376
+msgid "You can overwrite any bootstrap 4 variables or add custom styles here"
+msgstr ""
+
+#: ../includes/classes/Settings.php:387
+msgid "Work mode"
+msgstr ""
+
+#: ../includes/classes/Settings.php:391
+msgid "Step by step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:392
+msgid "Free walk"
+msgstr ""
+
+#: ../includes/classes/Settings.php:393
+msgid "Single step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:394
+msgid "Sequence"
+msgstr ""
+
+#: ../includes/classes/Settings.php:397, ../includes/classes/Settings.php:409, ../includes/classes/Settings.php:416, ../includes/classes/Settings.php:424, ../includes/classes/Settings.php:432, ../includes/classes/Settings.php:439, ../includes/classes/Settings.php:447, ../includes/classes/Settings.php:457, ../includes/classes/Settings.php:467, ../includes/classes/Settings.php:478
+msgid "Behavior"
+msgstr ""
+
+#: ../includes/classes/Settings.php:400
+msgid "Nav action"
+msgstr ""
+
+#: ../includes/classes/Settings.php:404
+msgid "Submit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:405
+msgid "Get step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:412
+msgid "Final redirect URL"
+msgstr ""
+
+#: ../includes/classes/Settings.php:419
+msgid "Check availability rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:423
+msgid "Check availability rules setting everywhere"
+msgstr ""
+
+#: ../includes/classes/Settings.php:427
+msgid "Strict cart workflow"
+msgstr ""
+
+#: ../includes/classes/Settings.php:431
+msgid "Drop products from steps after the current"
+msgstr ""
+
+#: ../includes/classes/Settings.php:435
+msgid "Scrolling to top on the form update"
+msgstr ""
+
+#: ../includes/classes/Settings.php:443
+msgid "The gap on scrolling up"
+msgstr ""
+
+#: ../includes/classes/Settings.php:448, ../includes/classes/Settings.php:695, ../includes/classes/Settings.php:710
+msgid "px"
+msgstr ""
+
+#: ../includes/classes/Settings.php:452
+msgid "Hide prices"
+msgstr ""
+
+#: ../includes/classes/Settings.php:456
+msgid "Hide product prices within the wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:460
+msgid "Price discount"
+msgstr ""
+
+#: ../includes/classes/Settings.php:470
+msgid "Price discount type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:474
+msgid "Replace prices"
+msgstr ""
+
+#: ../includes/classes/Settings.php:475
+msgid "Show as sale"
+msgstr ""
+
+#: ../includes/classes/Settings.php:483
+msgid "Clear main cart on the wizard confirm"
+msgstr ""
+
+#: ../includes/classes/Settings.php:487, ../includes/classes/Settings.php:495, ../includes/classes/Settings.php:503, ../includes/classes/Settings.php:512, ../includes/classes/Settings.php:521, ../includes/classes/Settings.php:530, ../includes/classes/Settings.php:539, ../includes/classes/Settings.php:549, ../includes/classes/Settings.php:559, ../includes/classes/Settings.php:1491, ../includes/classes/Settings.php:1503, ../includes/classes/Settings.php:1511, ../includes/classes/Settings.php:1519, ../includes/classes/Settings.php:1527, ../includes/classes/Settings.php:1535, ../includes/classes/Settings.php:1543, ../includes/classes/Settings.php:1550, ../includes/classes/Settings.php:1558, ../includes/classes/Settings.php:1568, ../includes/classes/Settings.php:1575, ../includes/classes/Settings.php:1582, ../includes/classes/Settings.php:1590, ../includes/classes/Settings.php:1599, ../includes/classes/Settings.php:1608, ../includes/classes/Settings.php:1617, ../includes/classes/Settings.php:1626, ../includes/classes/Settings.php:1635, ../includes/classes/Settings.php:1644
+msgid "Cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:490
+msgid "Show steps names in the cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:494, ../includes/classes/Settings.php:1149
+msgid "Appears in the cart tab and widget"
+msgstr ""
+
+#: ../includes/classes/Settings.php:498
+msgid "Reflect products in the main cart immediately"
+msgstr ""
+
+#: ../includes/classes/Settings.php:502
+msgid "Adds and removes products in the main cart accordingly to the wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:506, ../includes/classes/Settings.php:872, ../includes/classes/Settings.php:1593
+msgid "Minimum products selected"
+msgstr ""
+
+#: ../includes/classes/Settings.php:511, ../includes/classes/Settings.php:520
+msgid "Count of selected items of wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:515, ../includes/classes/Settings.php:882, ../includes/classes/Settings.php:1602
+msgid "Maximum products selected"
+msgstr ""
+
+#: ../includes/classes/Settings.php:524, ../includes/classes/Settings.php:1629
+msgid "Minimum total products quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:529, ../includes/classes/Settings.php:538, ../includes/classes/Settings.php:1634, ../includes/classes/Settings.php:1642
+msgid "Total selected products and their quantities"
+msgstr ""
+
+#: ../includes/classes/Settings.php:533, ../includes/classes/Settings.php:1638
+msgid "Maximum total products quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:542, ../includes/classes/Settings.php:892
+msgid "Minimum products price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:548, ../includes/classes/Settings.php:558
+msgid "Total price of selected items of wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:552, ../includes/classes/Settings.php:902
+msgid "Maximum products price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:564
+msgid "Group products into kits after adding to the main cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:568, ../includes/classes/Settings.php:2056, ../includes/classes/Settings.php:2199
+msgid "Not working with reflecting products in the main cart option"
+msgstr ""
+
+#: ../includes/classes/Settings.php:569, ../includes/classes/Settings.php:580, ../includes/classes/Settings.php:591, ../includes/classes/Settings.php:601, ../includes/classes/Settings.php:611
+msgid "Kits"
+msgstr ""
+
+#: ../includes/classes/Settings.php:572
+msgid "Kits type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:576
+msgid "Separated products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:577
+msgid "Combined product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:583
+msgid "Kit base product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:589
+msgid "Define specific product to use as a base of the kit. Its price will be zeroed."
+msgstr ""
+
+#: ../includes/classes/Settings.php:594
+msgid "Combined kit base price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:600
+msgid "Set the base price of combined kits. It will be included by default."
+msgstr ""
+
+#: ../includes/classes/Settings.php:604
+msgid "Combined kit fixed price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:610
+msgid "Set the fixed price of combined kits. Overwrites kit base price!"
+msgstr ""
+
+#: ../includes/classes/Settings.php:616
+msgid "Generate thumbnail"
+msgstr ""
+
+#: ../includes/classes/Settings.php:620
+msgid "Will be used for combined kits type or kit with a defined base product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:621, ../includes/classes/Settings.php:629, ../includes/classes/Settings.php:637, ../includes/classes/Settings.php:644, ../includes/classes/Settings.php:732, ../includes/classes/Settings.php:831, ../includes/classes/Settings.php:1334
+msgid "Thumbnail"
+msgstr ""
+
+#: ../includes/classes/Settings.php:624
+msgid "Thumbnail canvas width"
+msgstr ""
+
+#: ../includes/classes/Settings.php:632
+msgid "Thumbnail canvas height"
+msgstr ""
+
+#: ../includes/classes/Settings.php:640
+msgid "Thumbnail areas"
+msgstr ""
+
+#: ../includes/classes/Settings.php:649
+msgid "Nav template"
+msgstr ""
+
+#: ../includes/classes/Settings.php:654
+msgid "For modes with navigation"
+msgstr ""
+
+#: ../includes/classes/Settings.php:655, ../includes/classes/Settings.php:669, ../includes/classes/Settings.php:681, ../includes/classes/Settings.php:688, ../includes/classes/Settings.php:696, ../includes/classes/Settings.php:703, ../includes/classes/Settings.php:711, ../includes/classes/Settings.php:719, ../includes/classes/Settings.php:726, ../includes/classes/Settings.php:733, ../includes/classes/Settings.php:740, ../includes/classes/Settings.php:747
+msgid "Layout"
+msgstr ""
+
+#: ../includes/classes/Settings.php:658
+msgid "Show sidebar"
+msgstr ""
+
+#: ../includes/classes/Settings.php:662
+msgid "Then isn't empty"
+msgstr ""
+
+#: ../includes/classes/Settings.php:663
+msgid "Always"
+msgstr ""
+
+#: ../includes/classes/Settings.php:664
+msgid "Then isn't empty until the results step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:665
+msgid "Always until the results step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:666
+msgid "Never"
+msgstr ""
+
+#: ../includes/classes/Settings.php:672
+msgid "Sidebar position"
+msgstr ""
+
+#: ../includes/classes/Settings.php:677
+msgid "Right"
+msgstr ""
+
+#: ../includes/classes/Settings.php:678
+msgid "Left"
+msgstr ""
+
+#: ../includes/classes/Settings.php:679, ../includes/classes/Settings.php:1357
+msgid "Top"
+msgstr ""
+
+#: ../includes/classes/Settings.php:684
+msgid "Sticky widget"
+msgstr ""
+
+#: ../includes/classes/Settings.php:691
+msgid "Sticky widget offset top"
+msgstr ""
+
+#: ../includes/classes/Settings.php:699
+msgid "Sticky header"
+msgstr ""
+
+#: ../includes/classes/Settings.php:706
+msgid "Sticky header offset top"
+msgstr ""
+
+#: ../includes/classes/Settings.php:714
+msgid "Show steps names"
+msgstr ""
+
+#: ../includes/classes/Settings.php:718
+msgid "Show/hide steps names of one screen modes"
+msgstr ""
+
+#: ../includes/classes/Settings.php:722
+msgid "Table layout price string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:729
+msgid "Table layout thumbnail string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:736
+msgid "Table layout title string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:739, ../includes/classes/Settings.php:1327, ../views/form/filter/fields/text.php:9
+msgid "Title"
+msgstr ""
+
+#: ../includes/classes/Settings.php:743
+msgid "Table layout to cart string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:746
+msgid "To cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:752
+msgid "Enable description tab"
+msgstr ""
+
+#: ../includes/classes/Settings.php:756, ../includes/classes/Settings.php:763, ../includes/classes/Settings.php:770, ../includes/classes/Settings.php:777, ../includes/classes/Settings.php:784, ../includes/classes/Settings.php:791, ../includes/classes/Settings.php:798, ../includes/classes/Settings.php:805, ../includes/classes/Settings.php:818, ../includes/classes/Settings.php:825, ../includes/classes/Settings.php:832, ../includes/classes/Settings.php:839, ../includes/classes/Settings.php:846, ../includes/classes/Settings.php:853
+msgid "Tabs"
+msgstr ""
+
+#: ../includes/classes/Settings.php:759
+msgid "Description tab title"
+msgstr ""
+
+#: ../includes/classes/Settings.php:762
+msgid "Welcome"
+msgstr ""
+
+#: ../includes/classes/Settings.php:766
+msgid "Description tab thumbnail"
+msgstr ""
+
+#: ../includes/classes/Settings.php:773
+msgid "Enable results tab"
+msgstr ""
+
+#: ../includes/classes/Settings.php:780
+msgid "Results tab title"
+msgstr ""
+
+#: ../includes/classes/Settings.php:783, ../includes/classes/Settings.php:936
+msgid "Total"
+msgstr ""
+
+#: ../includes/classes/Settings.php:787
+msgid "Results tab thumbnail"
+msgstr ""
+
+#: ../includes/classes/Settings.php:794
+msgid "Results tab description"
+msgstr ""
+
+#: ../includes/classes/Settings.php:801
+msgid "Show results tab table"
+msgstr ""
+
+#: ../includes/classes/Settings.php:808
+msgid "Results tab contact form"
+msgstr ""
+
+#: ../includes/classes/Settings.php:814
+msgid "Might have special shortcodes. For more info see the"
+msgstr ""
+
+#: ../includes/classes/Settings.php:821
+msgid "Result tab price string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:828
+msgid "Result thumbnail string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:835
+msgid "Result data string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:838
+msgid "Product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:842
+msgid "Result remove string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:845, ../includes/classes/Settings.php:1156, ../includes/classes/Settings.php:1220
+msgid "Remove"
+msgstr ""
+
+#: ../includes/classes/Settings.php:849
+msgid "Result quantity string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:852
+msgid "Quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:858
+msgid "Empty cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:861
+msgid "Your cart is empty"
+msgstr ""
+
+#: ../includes/classes/Settings.php:862, ../includes/classes/Settings.php:869, ../includes/classes/Settings.php:879, ../includes/classes/Settings.php:889, ../includes/classes/Settings.php:899, ../includes/classes/Settings.php:909, ../includes/classes/Settings.php:916, ../includes/classes/Settings.php:923, ../includes/classes/Settings.php:930, ../includes/classes/Settings.php:937, ../includes/classes/Settings.php:944, ../includes/classes/Settings.php:951, ../includes/classes/Settings.php:959
+msgid "Strings"
+msgstr ""
+
+#: ../includes/classes/Settings.php:865
+msgid "Nothing found"
+msgstr ""
+
+#: ../includes/classes/Settings.php:875
+msgid "Minimum selected items are required: %limit%"
+msgstr ""
+
+#: ../includes/classes/Settings.php:876, ../includes/classes/Settings.php:886
+msgid "\"%limit%\" - products limit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:878, ../includes/classes/Settings.php:888
+msgid "\"%value%\" - current products count"
+msgstr ""
+
+#: ../includes/classes/Settings.php:885
+msgid "Maximum items selected: %limit%"
+msgstr ""
+
+#: ../includes/classes/Settings.php:895
+msgid "Minimum products price is %limit%. Your cart is only %value%"
+msgstr ""
+
+#: ../includes/classes/Settings.php:896, ../includes/classes/Settings.php:906
+msgid "\"%limit%\" - products price limit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:898, ../includes/classes/Settings.php:908
+msgid "\"%value%\" - current products price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:905
+msgid "Maximum products price is %limit%. Your cart is %value%"
+msgstr ""
+
+#: ../includes/classes/Settings.php:912
+msgid "Kit base price string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:915
+msgid "Base price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:919
+msgid "Subtotal string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:922
+msgid "Subtotal"
+msgstr ""
+
+#: ../includes/classes/Settings.php:926
+msgid "Discount string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:929, ../includes/classes/Settings.php:2023
+msgid "Discount"
+msgstr ""
+
+#: ../includes/classes/Settings.php:933
+msgid "Total string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:940
+msgid "File upload max size error"
+msgstr ""
+
+#: ../includes/classes/Settings.php:943
+msgid "The uploaded file is too large"
+msgstr ""
+
+#: ../includes/classes/Settings.php:947
+msgid "File upload extension error"
+msgstr ""
+
+#: ../includes/classes/Settings.php:950
+msgid "The uploaded file extension is forbidden"
+msgstr ""
+
+#: ../includes/classes/Settings.php:954, ../includes/classes/Settings.php:957
+msgid "File upload error"
+msgstr ""
+
+#: ../includes/classes/Settings.php:958
+msgid "For other unpredicted error cases"
+msgstr ""
+
+#: ../includes/classes/Settings.php:964
+msgid "\"Start\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:967
+msgid "Start"
+msgstr ""
+
+#: ../includes/classes/Settings.php:968, ../includes/classes/Settings.php:975, ../includes/classes/Settings.php:987, ../includes/classes/Settings.php:994, ../includes/classes/Settings.php:1001, ../includes/classes/Settings.php:1009, ../includes/classes/Settings.php:1016, ../includes/classes/Settings.php:1023, ../includes/classes/Settings.php:1030, ../includes/classes/Settings.php:1037, ../includes/classes/Settings.php:1044, ../includes/classes/Settings.php:1051, ../includes/classes/Settings.php:1058, ../includes/classes/Settings.php:1065, ../includes/classes/Settings.php:1072, ../includes/classes/Settings.php:1079, ../includes/classes/Settings.php:1086, ../includes/classes/Settings.php:1093, ../includes/classes/Settings.php:1100, ../includes/classes/Settings.php:1107, ../includes/classes/Settings.php:1114, ../includes/classes/Settings.php:1121, ../includes/classes/Settings.php:1128, ../includes/classes/Settings.php:1135, ../includes/classes/Settings.php:1142, ../includes/classes/Settings.php:1150, ../includes/classes/Settings.php:1157, ../includes/classes/Settings.php:1164, ../includes/classes/Settings.php:1172, ../includes/classes/Settings.php:1179, ../includes/classes/Settings.php:1186, ../includes/classes/Settings.php:1193, ../includes/classes/Settings.php:1200, ../includes/classes/Settings.php:1207, ../includes/classes/Settings.php:1214, ../includes/classes/Settings.php:1221, ../includes/classes/Settings.php:1228
+msgid "Controls"
+msgstr ""
+
+#: ../includes/classes/Settings.php:971
+msgid "\"Start\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:982
+msgid "Enable \"Add to cart\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:986, ../includes/classes/Settings.php:1008
+msgid "Appears at the last page"
+msgstr ""
+
+#: ../includes/classes/Settings.php:990
+msgid "\"Add to cart\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:993, ../includes/classes/Settings.php:1192
+msgid "Add to cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:997
+msgid "\"Add to cart\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1004
+msgid "Enable \"Result PDF\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1012
+msgid "\"Result PDF\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1015
+msgid "Get PDF"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1019
+msgid "\"Result PDF\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1026
+msgid "Enable \"Back\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1033
+msgid "\"Back\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1036
+msgid "Back"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1040
+msgid "\"Back\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1047
+msgid "Enable \"Next\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1054
+msgid "\"Next\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1057
+msgid "Next"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1061
+msgid "\"Next\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1068
+msgid "Enable \"Reset\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1075, ../includes/classes/Settings.php:1294
+msgid "\"Reset\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1078, ../includes/classes/Settings.php:1297, ../includes/classes/Settings_Page.php:96
+msgid "Reset"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1082
+msgid "\"Reset\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1089
+msgid "Enable \"Skip\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1096
+msgid "\"Skip\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1099
+msgid "Skip"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1103
+msgid "\"Skip\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1110
+msgid "Enable \"To results\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1117
+msgid "\"To results\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1120
+msgid "To results"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1124
+msgid "\"To results\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1131
+msgid "\"Toggle widget\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1134
+msgid "Toggle cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1138
+msgid "\"Toggle widget\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1145
+msgid "Enable \"Remove\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1153
+msgid "\"Remove\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1160
+msgid "\"Remove\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1167
+msgid "Enable \"Edit\" button"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1171
+msgid "Appears in the cart widget"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1175
+msgid "\"Edit\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1178
+msgid "Edit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1182
+msgid "\"Edit\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1189
+msgid "Individual \"Add to cart\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1196
+msgid "Individual \"Add to cart\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1203
+msgid "Individual \"Update\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1206
+msgid "Update"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1210
+msgid "Individual \"Update\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1217
+msgid "Individual \"Remove\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1224
+msgid "Individual \"Remove\" button class"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1233
+msgid "Result PDF header height"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1238, ../includes/classes/Settings.php:1263
+msgid "cm"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1239, ../includes/classes/Settings.php:1246, ../includes/classes/Settings.php:1255, ../includes/classes/Settings.php:1264, ../includes/classes/Settings.php:1275, ../includes/classes/Settings.php:1282
+msgid "Result PDF"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1242
+msgid "Result PDF header content"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1249
+msgid "Result PDF top description"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1254, ../includes/classes/Settings.php:1274
+msgid "Allowed shortcodes: [wcpw-result-pdf-page-number], [wcpw-result-pdf-page-total]"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1258
+msgid "Result PDF footer height"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1267
+msgid "Result PDF footer content"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1278
+msgid "Result PDF bottom description"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1287
+msgid "Filter label"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1290, ../includes/classes/Settings.php:1291, ../includes/classes/Settings.php:1298, ../includes/classes/Settings.php:1304, ../includes/classes/Settings.php:1305, ../includes/classes/Settings.php:1312, ../includes/classes/Settings.php:1319
+msgid "Filter"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1301
+msgid "\"Submit\" button text"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1308
+msgid "\"From\" string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1311
+msgid "From"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1315
+msgid "\"To\" string"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1318
+msgid "To"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1331, ../includes/classes/Settings.php:1338, ../includes/classes/Settings.php:1350, ../includes/classes/Settings.php:1361, ../includes/classes/Settings.php:1368, ../includes/classes/Settings.php:1380
+msgid "Captions"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1341
+msgid "Description"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1353
+msgid "Description position"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1358
+msgid "Bottom"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1364
+msgid "Handle description with auto tags"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1371
+msgid "Item description source"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1375
+msgid "Product content"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1376
+msgid "Product short description"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1385
+msgid "Categories for using"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1390
+msgid "Select categories to get products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1394, ../includes/classes/Settings.php:1445
+msgid "Included products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1399
+msgid "Define specific products to output. Overwrites the categories setting!"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1403
+msgid "Excluded products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1407
+msgid "Exclude specific products or variations"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1411
+msgid "Exclude already added products of steps"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1417
+msgid "Hide steps products which are in the cart. Define steps IDs separated by a comma."
+msgstr ""
+
+#: ../includes/classes/Settings.php:1422
+msgid "Order"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1426
+msgid "ASC"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1427
+msgid "DESC"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1433
+msgid "Order by"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1437
+msgid "ID"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1438
+msgid "Author"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1440
+msgid "Date"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1441
+msgid "Modified"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1442
+msgid "Rand"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1443
+msgid "Comment count"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1444
+msgid "Menu order"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1452
+msgid "Enable \"Order by\" dropdown"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1459, ../views/form/products-per-page.php:42
+msgid "Products per page"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1464
+msgid "Zero is equal infinity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1468, ../includes/classes/Settings.php:1475
+msgid "Products per page items"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1487
+msgid "Individual controls"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1494
+msgid "\"Add to cart\" button behavior"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1499
+msgid "Stay on the same step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1500
+msgid "Go next"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1501
+msgid "Add to main cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1506
+msgid "Hide choose element"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1510
+msgid "Use with individual controls only"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1514
+msgid "Add to cart by quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1518
+msgid "Add all positive quantity products to the cart on submit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1522
+msgid "Don't add to the cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1526
+msgid "Don't add products from this step to WooCommerce cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1530
+msgid "Don't add specific products to the cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1534
+msgid "Don't add specific products from this step to WooCommerce cart"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1538
+msgid "Can select several products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1542
+msgid "Replace radio-inputs with checkboxes"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1546
+msgid "Can select several variations per one product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1553
+msgid "Sold individually"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1557
+msgid "Hide products quantity input"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1561
+msgid "Selected items by default"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1566
+msgid "Products and their variations might be selected separately. Keep empty for auto-selecting."
+msgstr ""
+
+#: ../includes/classes/Settings.php:1571
+msgid "All items are selected by default"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1578
+msgid "No selected items by default"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1585
+msgid "Default product quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1598, ../includes/classes/Settings.php:1607
+msgid "Count of selected items per step"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1611
+msgid "Minimum product quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1616, ../includes/classes/Settings.php:1624
+msgid "Product quantity input limit"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1620
+msgid "Maximum product quantity"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1649
+msgid "Template"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1654
+msgid "Use \"grid column\" setting for grid template configuring"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1655, ../includes/classes/Settings.php:1714, ../includes/classes/Settings.php:1779, ../includes/classes/Settings.php:1788, ../includes/classes/Settings.php:1796, ../includes/classes/Settings.php:1861, ../includes/classes/Settings.php:1869, ../includes/classes/Settings.php:1876, ../includes/classes/Settings.php:1883, ../includes/classes/Settings.php:1924
+msgid "View"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1658
+msgid "Grid column"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1662, ../includes/classes/Settings.php:1727, ../includes/classes/Settings.php:1809
+msgid "Value from 1 to 12 according to the screen size"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1666, ../includes/classes/Settings.php:1731, ../includes/classes/Settings.php:1813
+msgid "Smallest"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1674, ../includes/classes/Settings.php:1739, ../includes/classes/Settings.php:1821
+msgid "Extra-small"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1682, ../includes/classes/Settings.php:1747, ../includes/classes/Settings.php:1829
+msgid "Small"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1690, ../includes/classes/Settings.php:1755, ../includes/classes/Settings.php:1837
+msgid "Medium"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1698, ../includes/classes/Settings.php:1763, ../includes/classes/Settings.php:1845
+msgid "Large"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1706, ../includes/classes/Settings.php:1771, ../includes/classes/Settings.php:1853
+msgid "Extra-large"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1717
+msgid "Grid column then the sidebar is showed"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1782
+msgid "Item template"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1787
+msgid "Doesn't matter for the \"Table\" template"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1791
+msgid "Merge thumbnail with gallery"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1795
+msgid "Show gallery withing thumbnail element"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1799
+msgid "Gallery column"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1864, ../includes/classes/Settings.php:2016
+msgid "Variation template"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1872
+msgid "Enable title link"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1879
+msgid "Show product tags"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1888, ../includes/classes/Settings.php:1933, ../includes/classes/Settings.php:1945, ../includes/classes/Settings.php:1952, ../includes/classes/Settings.php:1962
+msgid "Filters"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1901
+msgid "Label"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1907
+msgid "Include"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1912
+msgid "Include specific values only. Define terms IDs separated by a comma."
+msgstr ""
+
+#: ../includes/classes/Settings.php:1916
+msgid "Exclude"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1920
+msgid "Exclude specific values. Define terms IDs separated by a comma."
+msgstr ""
+
+#: ../includes/classes/Settings.php:1936
+msgid "Filter position"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1940
+msgid "Sidebar filter not working for single-step layouts"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1942
+msgid "Before products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1943
+msgid "Before sidebar widget"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1948
+msgid "Expand filter by default"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1955
+msgid "Filter thumbnail size"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1960
+msgid "Set width and height separated by a comma or use string value. For example thumbnail, medium, large"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1977
+msgid "Use simple numeric value or steps IDs separated by a comma"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1980
+msgid "Type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1985
+msgid "Simple count"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1986
+msgid "Count of selected products of steps"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1987
+msgid "Least product quantity of steps"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1988
+msgid "Greatest product quantity of steps"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1989
+msgid "Sum of products quantities of steps"
+msgstr ""
+
+#: ../includes/classes/Settings.php:1993, ../includes/classes/Settings.php:2042, ../includes/classes/Settings.php:2136, ../includes/classes/Settings.php:2185
+msgid "Value"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2012
+msgid "Show/hide the variation according the specific rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2020
+msgid "Default"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2028, ../includes/classes/Settings.php:2171
+msgid "Reduce simple product price bought using a wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2031, ../includes/classes/Settings.php:2125, ../includes/classes/Settings.php:2174
+msgid "Discount type"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2036, ../includes/classes/Settings.php:2130, ../includes/classes/Settings.php:2179
+msgid "Percentage"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2037, ../includes/classes/Settings.php:2131, ../includes/classes/Settings.php:2180
+msgid "Fixed"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2038, ../includes/classes/Settings.php:2132, ../includes/classes/Settings.php:2181
+msgid "Precise price"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2051
+msgid "Attach wizard to the product"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2059, ../includes/classes/Settings.php:2202
+msgid "Attached wizard place"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2063, ../includes/classes/Settings.php:2206
+msgid "Before form"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2064, ../includes/classes/Settings.php:2207
+msgid "After form"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2065, ../includes/classes/Settings.php:2208
+msgid "Separate tab"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2070, ../includes/classes/Settings.php:2213
+msgid "Separate tab title"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2073, ../includes/classes/Settings.php:2216
+msgid "WooCommerce Products Wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2076, ../includes/classes/Settings.php:2219
+msgid "Redirect to the wizard on add to cart event"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2083, ../includes/classes/Settings.php:2226
+msgid "Redirect link"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2089
+msgid "Step ID for using after redirect"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2094, ../includes/classes/Settings.php:2237
+msgid "If you want the product will be out of any step then set it to any out of steps IDs value"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2098
+msgid "Generated thumbnail areas data"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2103, ../includes/classes/Settings.php:2151, ../includes/classes/Settings.php:2246
+msgid "Input the name of the area you want to replace with an image"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2112, ../includes/classes/Settings.php:2160
+msgid "Availability rules in wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2114
+msgid "Show/hide the product according the specific rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2118
+msgid "Products Wizard discount"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2122
+msgid "Reduce product variations prices bought using a wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2146, ../includes/classes/Settings.php:2241
+msgid "Wizard generated thumbnail areas data"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2162
+msgid "Show/hide the category according the specific rules"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2166
+msgid "Discount in wizard"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2194
+msgid "Attach wizard to products"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2232
+msgid "Wizard step ID for using after redirect"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2253
+msgid "Products Wizard Thumbnail"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2710, ../includes/classes/Settings.php:2740
+msgid "Range"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2715, ../includes/classes/Settings.php:2726, ../includes/classes/Settings.php:2741
+msgid "Select"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2716, ../includes/classes/Settings.php:2727, ../includes/classes/Settings.php:2742
+msgid "Inline radio"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2717, ../includes/classes/Settings.php:2728, ../includes/classes/Settings.php:2743
+msgid "Radio"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2718, ../includes/classes/Settings.php:2744
+msgid "Image radio"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2719, ../includes/classes/Settings.php:2729, ../includes/classes/Settings.php:2745
+msgid "Inline checkbox"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2720, ../includes/classes/Settings.php:2730, ../includes/classes/Settings.php:2746
+msgid "Checkbox"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2721, ../includes/classes/Settings.php:2747
+msgid "Image checkbox"
+msgstr ""
+
+#: ../includes/classes/Settings.php:2735
+msgid "Text"
+msgstr ""
+
+#: ../includes/classes/Settings_Page.php:40
+msgid "Custom styles"
+msgstr ""
+
+#: ../includes/classes/Settings_Page.php:91
+msgid "Reset to defaults"
+msgstr ""
+
+#: ../includes/classes/Settings_Page.php:140
+msgid "SCSS error"
+msgstr ""
+
+#: ../views/form/order-by.php:66, ../views/form/products-per-page.php:55
+msgid "Apply"
+msgstr ""
+
+#: ../views/form/pagination.php:17
+msgid "Page navigation"
+msgstr ""
+
+#: ../views/form/item/prototype/choose.php:68
+msgid "Choose"
+msgstr ""

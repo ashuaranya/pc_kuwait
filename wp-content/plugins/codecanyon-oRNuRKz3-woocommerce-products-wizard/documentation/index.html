@@ -1,0 +1,1913 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Woocommerce Products Wizard</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/highlight/highlight.min.css">
+	<style type="text/css" media="screen">
+		p, table, hr, .box {
+			margin-bottom: 25px;
+		}
+
+		.box p {
+			margin-bottom: 10px;
+		}
+
+		.ol-type-1 li {
+			margin-bottom: 1em;
+		}
+
+		img {
+			display: block;
+			margin-right: auto;
+			margin-left: auto;
+		}
+
+		.section {
+			border-bottom: 1px solid #ddd;
+			margin-bottom: 1em;
+			padding-bottom: 1em;
+		}
+
+		.row {
+			margin-right: -10px;
+			margin-left: -10px;
+		}
+
+		.row::after {
+			content: " ";
+			display: table;
+			clear: both;
+		}
+
+		.col {
+			box-sizing: border-box;
+			padding-right: 10px;
+			padding-left: 10px;
+		}
+
+		@media (min-width: 1199px) {
+			.col-lg-6 {
+				float: left;
+				width: 50%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3 class="center alt">
+			&ldquo;Woocommerce Products Wizard&rdquo; Documentation by &ldquo;troll_winner&rdquo; for the plugin version 9.1.3
+		</h3>
+		<h1 class="center">&ldquo;Woocommerce Products Wizard&rdquo;</h1>
+		<div class="borderTop row">
+			<div class="col col-lg-6 info">
+				<p class="prepend-top">
+					<strong>
+					By: troll_winner<br>
+					Email: <a href="mailto:troll_winner@mail.ru">troll_winner@mail.ru</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="col col-lg-6">
+				<p class="prepend-top append-0">If you have any questions that are beyond the scope of this help file, please feel free to email <a href="mailto:troll_winner@mail.ru">troll_winner@mail.ru</a>.</p>
+			</div>
+		</div><!-- end div .borderTop -->
+
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#about">About</a></li>
+			<li><a href="#main-settings">Main settings</a></li>
+			<li>
+				<a href="#post-settings">Post Settings</a>
+				<ul class="alpha">
+					<li><a href="#post-settings-basic">Basic</a></li>
+					<li><a href="#post-settings-behavior">Behavior</a></li>
+					<li><a href="#post-settings-cart">Cart</a></li>
+					<li><a href="#post-settings-kits">Kits</a></li>
+					<li><a href="#post-settings-thumbnail">Thumbnail</a></li>
+					<li><a href="#post-settings-layout">Layout</a></li>
+					<li><a href="#post-settings-tabs">Tabs</a></li>
+					<li><a href="#post-settings-strings">Strings</a></li>
+					<li><a href="#post-settings-controls">Controls</a></li>
+					<li><a href="#post-settings-pdf">Result PDF</a></li>
+					<li>
+						<a href="#post-settings-step">Step settings</a>
+						<ul class="alpha">
+							<li><a href="#post-settings-step-captions">Captions</a></li>
+							<li><a href="#post-settings-step-query">Query</a></li>
+							<li><a href="#post-settings-step-cart">Cart</a></li>
+							<li><a href="#post-settings-step-view">View</a></li>
+							<li><a href="#post-settings-step-filters">Filters</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#product-settings">Product Settings</a></li>
+			<li><a href="#category-settings">Category Settings</a></li>
+			<li><a href="#call-form">Call a form</a></li>
+			<li><a href="#custom-fields">How to add custom products/steps fields</a></li>
+			<li><a href="#epo-settings">Extra Product Options Settings</a></li>
+			<li><a href="#templates-customization">Templates Customizations</a></li>
+			<li><a href="#php-filters">PHP filters</a></li>
+			<li>
+				<a href="#php-tricks">PHP helpful tricks</a>
+				<ul class="alpha">
+					<li><a href="#php-tricks-custom-filters">Add custom product filters to a step</a></li>
+					<li><a href="#php-tricks-hide-product">Hide products from shop</a></li>
+					<li><a href="#php-tricks-coupons-for-discounted-products">Don't apply coupons to products with a wizard discount</a></li>
+				</ul>
+			</li>
+			<li><a href="#js-actions">JS actions</a></li>
+			<li><a href="#js-tricks">JS helpful tricks</a></li>
+		</ol>
+
+		<section class="section">
+			<h3 id="about"><strong>A) About</strong> - <a href="#toc">top</a></h3>
+			<p>The WooCommerce Products Wizard plugin enables <b>mass-customization features</b> for your store and gives your customers the opportunity to <b>personalize their purchase</b>.</p>
+
+			<p>The main task of this plugin is to create a form, which step by step helps customers <b>to choose a kit</b> from all products and categories.</p>
+
+			<p>This is possible to show only appropriate products according to the previous steps answers. This way your customer will <b>not be confused</b> while selecting his own configuration.</p>
+
+			<p>Also, using the plugin you can <b>create composite products</b> with static children or selected by customers from defined ones.</p>
+
+			<p>Moreover, this is possible to get the user selection via <b>email or PDF file</b> while or instead of the usual products ordering workflow.</p>
+
+			<img src="assets/images/about.png" alt="Plugin promo" />
+		</section>
+		<section>
+			<h3 id="main-settings"><strong>B) Main Settings</strong> - <a href="#toc">top</a></h3>
+			<article class="section">
+				<h4>Main Settings</h4>
+
+				<img src="assets/images/global-general-settings.png" alt="General global settings page" />
+
+				<p>1. You can choose what styles should be included from the plugin.</p>
+
+				<ul>
+					<li>
+						<b>Full</b> is the self-sufficient style file. It applied all required styles to the plugin's
+						elements.
+					</li>
+					<li>
+						<b>Basic</b> styles should be fine if your active theme is based on the "Bootstrap 3/4" framework,
+						then the wizard will be styled the same as your active theme. Or if you need some basic styles
+						applied to the wizard's elements and want to add your own extra-styles.
+					</li>
+					<li>
+						<b>None</b> value doesn't include any styles at all. This way you can make a complete custom style
+						from the plugin sources and tools or use your own approach for styling.
+					</li>
+					<li>
+						<b>Custom full styles</b> include the file with your custom styles such as colors, font-size, and so on.
+						To modify it go to the <b>Custom styles</b> sub-page.
+					</li>
+				</ul>
+
+				<p>
+					2. If for some reasons you need to disable some of plugin's scripts, change
+					<b>"Scripts including type"</b> setting to "Multiple files" and de-select them in the list lower.
+				</p>
+
+				<p>
+					3. Sometimes server's configuration might have problems with storing sessions.
+					For example, if the wizard can't go next thought the steps or loses the cart content on the page
+					update.
+					In this case tick <b>"Store session in the DB"</b> setting which works much reliable but probably
+					a little bit slower.
+				</p>
+
+				<p>
+					4. If you have a cache plugin on your site it might make the wizard's work unpredictable.
+					This way the <b>"Send current state hash via AJAX"</b> setting might help to fix it.
+				</p>
+			</article>
+			<article class="section">
+				<h4>Custom styles</h4>
+
+				<img src="assets/images/global-custom-styles-settings.png" alt="Custom styles settings page" />
+
+				<p>
+					This is possible to reconfigure the plugin's styles according to your needs.
+					Don't forget to choose <b>Custom full styles file</b> value of the <b>Styles including type</b>
+					setting.
+				</p>
+
+				<p>
+					In a case of required styles debug disable the <b>Minify custom styles</b> setting to get them
+					more readable. In other cases keep this setting enabled to make the file less and save your customers
+					traffic.
+				</p>
+
+				<p>
+					There are two <b>modes</b> of custom styling. The simple mode provides only a few main variables to change, while the advanced one allows to change much more variables and do this more flexible but requires SCSS knowledge. There are all plugin variables available for changing using the text editor.
+				</p>
+
+				<p>
+					Sometimes the wizard's font looks very small on specific themes. Adjust the <b>font size</b> setting this way. You can use any CSS units there, like "rem", "px", "pc" and so on. Separately you can change <b>product title and price font sizes</b>.
+				</p>
+
+				<p>
+					In a case of a style error you will see the message about it while saving and the styles will not be generated.
+				</p>
+
+				<p>
+					In a case you need to return all styles to the initial state click <b>Reset to default</b> button once.
+				</p>
+			</article>
+		</section>
+		<section class="section">
+			<h3 id="post-settings"><strong>C) Post Settings</strong> - <a href="#toc">top</a></h3>
+			<article class="section">
+				<h4 id="post-settings-basic">Basic settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-basic-settings.png" alt="Basic settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. Use <b>post content</b> as a description of the first tab.
+						</p>
+						<p>
+							2. Use <b>"Add step"</b> button to create the required steps number. You also can sort them using
+							drag and drop.
+						</p>
+						<p>
+							3. <b>"Set default cart content from your session"</b> option allows to define the default wizard cart content
+							for the first launch. Open the wizard and go through it selecting products, which should be in a default kit,
+							and stop on the last step. After click <b>"Set default cart"</b> button in admin part to save these
+							products as default.
+							To reset this selection click <b>"Reset default cart"</b> button.
+						</p>
+						<p class="notice">
+							Default wizard behavior removes products from the steps, which are after the active one.
+							To avoid this disable the <b>"Strict cart workflow"</b> setting of the "Behavior" group.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-behavior">Behavior settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-behavior-settings.png" alt="Behavior settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. <b>"Work mode"</b> is an important setting which changes the main wizard's view and behavior.
+							Possible values are:
+						</p>
+						<ul>
+							<li>
+								<b>Step by step</b> - output the steps as tabs and doesn't allow to jump from the firsts steps
+								to the lasts. The only way to skip steps is to use the "Skip" or "Go to results" buttons;
+							</li>
+							<li>
+								<b>Free walk</b> - output the steps as tabs and allows to open any step you want;
+							</li>
+							<li>
+								<b>Single step</b> - output all steps at once vertically;
+							</li>
+							<li>
+								<b>Sequence</b> - output all steps vertically but one by one according to the current state.
+							</li>
+						</ul>
+						<p>
+							2. <b>"Nav action"</b> helps to change the event after the click on a nav button.
+							This is possible to submit and get step, just to get step or do nothing.
+						</p>
+						<p>
+							3. <b>"Final redirect URL"</b> is a url to the page, which will be opened after the
+							wizard selection confirmation.
+						</p>
+						<p>
+							4. <b>"Check availability rules"</b> setting allow to enable/disable ALL availability rules
+							though the wizard - from steps to generated thumbnail areas.
+						</p>
+						<p>
+							5. <b>"Strict cart workflow"</b> removes all products from the steps after the active one.
+							That might be helpful if you have complicated availability rules for products.
+						</p>
+						<p>
+							6. <b>"Scrolling to top on the form update"</b> will scroll the page to the top on going next through the wizard.
+						</p>
+						<p>
+							7. <b>"The gap on scrolling up (px)"</b> is a top gap after scrolling the page to the top.
+						</p>
+						<p>
+							8. <b>"Hide prices"</b> setting can hide the product prices for the plugin's
+							views and output. But keep in mind the prices and Woocommerce cart will stay.
+						</p>
+						<p>
+							9. For the products bought using a wizard the <b>"Price discount"</b> setting makes a
+							discount in percentage. Might be overwritten with a product category discount setting
+							or individual product setting for a specific product.
+						</p>
+						<p>
+							10. <b>"Price discount type</b> setting controls how the discounted price will be shown.
+							It can be just replaced by a reduced one or shown as a sale.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-cart">Cart settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-cart-settings.png" alt="Cart settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. <b>"Clear WooCommerce cart on the wizard confirms"</b> will always truncate the cart of WooCommerce
+							on any wizard confirmation.
+						</p>
+						<p>
+							2. <b>"Show steps names in the cart"</b> setting output steps names in the results/PDF table
+							and widget.
+						</p>
+						<p>
+							3. <b>"Reflect products in the main cart immediately"</b> will add and remove products in WooCommerce cart
+							as in the opened wizard.
+						</p>
+						<p>
+							4. <b>"Minimum/Maximum products selected"</b> settings defines the limits of the selected products to
+							complete the wizard order.
+						</p>
+						<p>
+							5. <b>"Minimum/Maximum total products quantity"</b> settings defines the limits of total quantities of
+							selected products to complete the wizard order.
+						</p>
+						<p>
+							6. <b>"Minimum/Maximum products price"</b> settings defines the limits of the selected products
+							total price to complete the wizard order.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-kits">Kits settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-kits-settings.png" alt="Kits settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. <b>"Group products into kits after adding to the main cart"</b> makes products bonded to each other in WooCommerce cart.
+						</p>
+						<p>
+							2. <b>"Kits type"</b> change the final view of a kit. With value <b>"Separated lines"</b> It might be
+							separated products, but still bonded. Alternatively, <b>"Combined products"</b> shows only
+							the first product in the cart with other products as sub-lines of this product.
+							You can use the wizard's thumbnail as a product thumbnail instead of the first product's one.
+						</p>
+						<p>
+							3. You can select a <b>"Kit base product"</b> to use it as a root product of kits.
+							It will no influence the final price.
+							If the base product is variable then you need to select a variation with all defined attributes.
+							Otherwise, the first product of the wizard's cart will be taken as a root.
+						</p>
+						<p>
+							4. You can define a <b>"Base kit price"</b> which will be included to the kit's price by default
+							and have no way to avoid it.
+						</p>
+						<p>
+							5. You can define a static <b>"Kit price"</b> value for the combined kit type. This setting
+							overwrites the base kit price and all products prices in the wizard.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-thumbnail">Thumbnail settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<figure>
+							<img src="assets/images/post-thumbnail-settings.png" alt="Thumbnail settings page" />
+							<figcaption>Thumbnail settings page</figcaption>
+						</figure>
+						<figure>
+							<img src="assets/images/post-thumbnail-settings-area.png" alt="Thumbnail area settings modal" />
+							<figcaption>Thumbnail area settings modal</figcaption>
+						</figure>
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							This is possible to show customers how their chosen product combinations might look like.
+							That requires a preliminary configuring of the image canvas. The generated thumbnail will be
+							used as a thumbnail of combined type kits and kits with a pre-defined base product.
+							It also can be output while the wizard workflow.
+						</p>
+						<p>
+							First of all tick the <b>Generate thumbnail</b> setting and define its <b>Width</b> and <b>Height</b>.
+						</p>
+						<p>
+							Then this is necessary to place areas on the thumbnail's canvas for further use of them.
+							Click <b>Add item</b> button to add one. The total number of added areas is on the right side
+							of the row near the <b>Clear canvas</b> button.
+						</p>
+						<p>
+							You can change areas placement using drag and drop, also change their sizes. Open the area
+							settings modal to change its <b>z-index order</b> too. That affects the overlapping areas
+							by each other.
+						</p>
+						<p>
+							Each area can have a <b>name</b>. This name might be used later to place appropriate images in the area.
+						</p>
+						<p>
+							Also, this is possible to define a default <b>image</b> for an area. It can be replaced later
+							or kept as is. It's better to use a transparent PNG image for better overlapping.
+						</p>
+						<p>
+							When the canvas is ready it's time to configure <a href="#product-settings">products</a>
+							or <a href="#category-settings">categories</a>.
+						</p>
+                        <p>
+                            Generated thumbnail will be show in widget then any of products is in the cart. To output
+                            the thumbnail somewhere else use the <b>[wcpw-generated-thumbnail-url]</b> shortcode to get
+                            the thumbnail's link. It can be used, for example, on the results tab or results PDF file.
+                        </p>
+                        <p>An example of shortcode usage:</p>
+<pre>
+&lt;a href="[wcpw-generated-thumbnail-url]" data-rel="prettyPhoto" rel="lightbox"&gt;
+   &lt;img src="[wcpw-generated-thumbnail-url]" alt=""&gt;
+&lt;/a&gt;
+</pre>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-layout">Layout settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-layout-settings.png" alt="Layout settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. With the <b>"Nav template"</b> setting you can choose how the tabbed views navigation should
+							look like.
+						</p>
+						<p>
+							2. <b>"Show sidebar"</b> setting rule the appearance of wizard sidebar.
+						</p>
+						<p>
+							3. <b>"Sidebar position"</b> setting allows to place the sidebar left, right or top.
+						</p>
+						<p>
+							4. This is possible to on/off <b>"Sticky sidebar"</b>
+						</p>
+						<p>
+							5. <b>"Sticky sidebar offset top"</b> tunes the gap between the top of the screen and stuck sidebar.
+						</p>
+						<p>
+							6. This is possible to on/off <b>"Sticky header"</b>
+						</p>
+						<p>
+							7. <b>"Sticky header offset top"</b> tunes the gap between the top of the screen and stuck header.
+						</p>
+						<p>
+							8. <b>"Show steps names"</b> setting output the steps names before forms on one-screen modes.
+						</p>
+						<p>
+							9. <b>"Table layout strings"</b> defines captions of the "layout" form view.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-tabs">Tabs settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-tabs-settings.png" alt="Tabs settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p>
+							1. <b>"Enable description tab"</b> enables/disables the first tab with description text.
+						</p>
+						<p>
+							2. <b>"Description tab title"</b> setting sets the description tabs nav item text.
+						</p>
+						<p>
+							3. <b>"Enable results tab"</b> enables/disables the last tab with selection results.
+						</p>
+						<p>
+							4. <b>"Results tab title"</b> setting sets the results tab nav item text.
+						</p>
+						<p>
+							5. <b>"Results tab description"</b> setting sets the results tab description before the table.
+						</p>
+						<p>
+							6. <b>"Show results tab table"</b> setting on/off the cart table on the result step.
+							For example, might be disabled to use the widget instead.
+						</p>
+						<p>
+							7. <b>"Results tab contact form"</b> setting sets what ContactForm7 form will be output on the
+							results tab lower the products selection table. Using this form you can send emails with the cart
+							content PDF.
+						</p>
+						<p class="notice">
+							To attach the cart PDF file to the email add the <code>[wcpw-result-pdf]</code>
+							shortcode in the <b>File attachments</b> field.
+						</p>
+						<p>
+							8. Use <b>"Results strings"</b> to change result page captions on the result tab and PDF.
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-strings">Strings settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-strings-settings.png" alt="Strings settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p><b>Strings</b> settings allows changing output strings thought the workflow.</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-controls">Controls settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-controls-settings.png" alt="Controls settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p><b>Controls</b> settings allows to choose which buttons are used in the wizard and their labels.</p>
+						<p>
+							Moreover, all controls might have different classes for their styling and behavior.
+							As the main plugin styles are based on the Bootstrap 4 framework you can use any from the
+							<a href="https://getbootstrap.com/docs/4.5/components/buttons/" rel="nofollow noopener" target="_blank">available styling classes of buttons.</a>
+						</p>
+						<p>Also, there are a few classes to control buttons text and icons appearing:</p>
+						<ul>
+							<li><b>hide-text</b> - hides text of the button but keeps it for screen readers;</li>
+							<li><b>hide-text-on-mobile</b> - hides text of the button on small screens but keeps it for screen readers;</li>
+							<li><b>icon-left</b> - define on which side of the button the icon should appear;</li>
+							<li><b>icon-right</b> - define on which side of the button the icon should appear;</li>
+							<li><b>show-icon</b> - always shows a pre-defined button icon. Requires <b>icon-left/right</b> class for work;</li>
+							<li><b>show-icon-on-mobile</b> - shows a pre-defined button icon on small screens. Requires <b>icon-left/right</b> class for work;</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-pdf">Result PDF settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-result-pdf-settings.png" alt="Result PDF settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<div class="notice">
+							To modify the PDF template make a copy of <code>views/result-pdf.php</code>
+							<br>
+							to your active theme directory to <code>woocommerce-products-wizard/result-pdf.php</code>.
+						</div>
+						<p>
+							1. <b>Result PDF header height</b> in cm allows to define the top header size for each page.
+						</p>
+						<p>
+							2. <b>Result PDF header content</b> will be used as the header for each page.
+							Its color and inner padding might be configured right there using CSS.
+							This is possible to use special shortcodes to output the current page number and total pages number.
+						</p>
+						<p>
+							3. <b>Result PDF top description</b> content will be placed before the results table.
+						</p>
+						<p>
+							4. <b>Result PDF footer height</b> in cm allows to define the top header size for each page.
+						</p>
+						<p>
+							5. <b>Result PDF footer content</b> will be used as the footer for each page.
+							Its color and inner padding might be configured right there using CSS.
+							This is possible to use special shortcodes to output the current page number and total pages number.
+						</p>
+						<p>6. <b>Result PDF bottom description</b> content will be placed after the results table.</p>
+					</div>
+				</div>
+			</article>
+			<article class="section">
+				<h4 id="post-settings-filter">Filter settings</h4>
+				<div class="row">
+					<div class="col col-lg-6">
+						<img src="assets/images/post-filter-settings.png" alt="Filter settings page" />
+					</div>
+					<div class="col col-lg-6">
+						<p><b>Filter</b> settings allows change strings of the steps filters.</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<h4 id="post-settings-step">Step settings</h4>
+
+				<section class="section">
+					<h5 id="post-settings-step-captions">Captions</h5>
+					<div class="row">
+						<div class="col col-lg-6">
+							<img src="assets/images/post-step-captions-settings.png" alt="Step captions settings" />
+						</div>
+						<div class="col col-lg-6">
+							<p>1. <b>"Title"</b> option allows changing the title of the tab.</p>
+							<p>2. <b>"Thumbnail"</b> of the step will be used in the navigation of the wizard.</p>
+							<p>3. <b>"Description"</b> setting helps to add the text on the current tab.</p>
+
+							<p>
+								You can add custom fields in the description to collect extra data from the customers while
+								they walking through the wizard.
+							</p>
+
+							<p>
+								Use <br>
+								<code>[wcpw-step-input name="%SOME-NAME-HERE%"]</code>
+								<br> shortcode for this. It outputs only an input or textarea HTML tag, so you can add
+								the label and other tags manually.
+							</p>
+
+							<p class="notice">Unsupported field types are: "button", "image", "reset", "submit".</p>
+
+							<p>
+								"Name" attribute is required for saving the data. All other required input attributes might be
+								passed the same inline way.
+							</p>
+
+							<p>
+								Keep in mind you can get these custom fields data from the customers only through the
+								PDF order file or combined kit type because they will not be saved among the ordinary products
+								in the WooCommerce cart.
+							</p>
+
+							<p>4. <b>"Description position"</b> setting change description text position.</p>
+
+							<p>
+								5. You can <b>Handle description with auto tags</b> around and between lines as it is
+								for the page content field.
+							</p>
+
+							<p>
+								6. <b>"Item description source"</b> changes the source of content for the item description.
+								You can output long or short product description or output nothing.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h5 id="post-settings-step-query">Query</h5>
+					<div class="row">
+						<div class="col col-lg-6">
+							<img src="assets/images/post-step-query-settings.png" alt="Step query settings" />
+						</div>
+						<div class="col col-lg-6">
+							<p>
+								1. Select the products <b>categories for using</b> in this step. Products of selected
+								categories will appear on the step.
+							</p>
+							<p>
+                                2. <b>"Included products"</b> allows output only selected products for this step.
+                                This settings overwrites the "categories" setting. So this isn't necessary to set both
+                                these settings.
+                            </p>
+                            <p class="notice">
+                                You also can keep these settings empty just to output a blank step with description and
+                                custom fields. This also will work.
+                            </p>
+							<p>3. <b>"Excluded products"</b> allow for removal of the output selected products for this step.</p>
+							<p>
+								4. <b>"Exclude already added products of steps"</b> setting might contain steps IDs separated
+								with a comma. If some products of these steps are already in the cart then they will not be
+								shown on the current step.
+							</p>
+							<p>
+								5. <b>"Availability rules"</b> is a unified and complex setting to control the step
+								appearance in the wizard. The <b>source</b> of a rule might be a product, product variation,
+								product attribute, product category or custom input value.
+							</p>
+							<p>
+								There are two possible <b>conditions</b> for a rule: "in cart" and "not in the cart".
+								So this is possible to check if a product, category, or custom field is added or not
+								added to the cart to show the step.
+							</p>
+							<p>
+								This is possible to choose a few products, attributes or categories per one rule. There is a setting
+								to control the <b>relation within the items</b>. The rule can be met when <b>all</b> or
+								<b>any</b> of these items are in or not in the cart.
+							</p>
+							<p>
+								For using the product attribute select it at first in the dropdown field and define
+								attribute values terms IDs (not slugs) separated by a comma in the next text input.
+								<a href="https://www.wpbeginner.com/beginners-guide/how-to-find-post-category-tag-comments-or-user-id-in-wordpress/#:~:text=How%20to%20Find%20Your%20WordPress%20Category%20ID%20and%20Tag%20ID?" target="_blank" rel="nofollow noopener">Here how you can find them.</a>
+							</p>
+							<p>
+								Moreover, there is a setting to control the <b>relationship of the rule with the
+								next rule</b>, namely any of the rules should be met or few at once.
+							</p>
+							<p>
+								The number of these rules is unlimited.
+							</p>
+                            <p>6. <b>"Order"</b> and <b>"Order by"</b> settings allows changing the sorting of products on the output.</p>
+							<p>7. <b>"Enable 'Order by' dropdown"</b> setting outputs the usual WooCommerce dropdown to change the products order.</p>
+							<p>8. <b>"Products per page"</b> setting changes the products per page quantity.</p>
+							<p>
+								9. <b>"Products per page items"</b> setting allows to output a dropdown to change
+								products per page number. Place a numeric value in each line.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h5 id="post-settings-step-cart">Cart</h5>
+					<div class="row">
+						<div class="col col-lg-6">
+							<img src="assets/images/post-step-cart-settings.png" alt="Step cart settings" />
+						</div>
+						<div class="col col-lg-6">
+							<p>
+								1. <b>"Individual controls"</b> settings enables/disables add-to-cart/remove buttons on each
+								product block.
+							</p>
+							<p>
+								2. <b>&laquo;Add to cart&raquo; button behavior</b> setting changes what action should be fired
+								after individual add-to-cart action.
+							</p>
+							<p>
+								3. <b>"Hide choose element"</b> settings allow hide the radio/checkbox input of
+								each product. The only way to choose a product will be the use of
+								<b>individual controls</b>.
+							</p>
+							<p>
+								4. There is a possibility to <b>add to cart by quantity</b> which is more than zero, so
+								this way the <b>"choose"</b> element might be hidden to simplify the interface and use the
+								products quantity input only. <b>"Sold individually"</b> setting shouldn't be enabled this way.
+							</p>
+							<p>
+								5. This is possible to <b>don't add products of this step to the cart</b> using
+								special options. You can skip all products of a step or only specific ones.
+								They will be visible in the wizard's workflow but skipped on the passing to the main cart.
+							</p>
+							<p>
+								6. <b>"Can select several products"</b> setting allows users to add more than one product
+								of single step and replaced radio buttons by checkboxes.
+							</p>
+							<p>
+								7. <b>"Can select several variations per one product"</b> setting changes the variable
+								product behavior. With the "Can select several products" setting it doesn't replace
+								another variation of the same product while adding to the cart.
+							</p>
+							<p>8. <b>"Sold individually"</b> setting enables/disable product quantity input.</p>
+							<p>
+								9. <b>"Selected items by default"</b> change the default selected products for the step.
+								You can select specific products to output them checked and specific product variations
+								to make them selected by default.
+							</p>
+							<p>10. Also, you can set <b>"All items are selected by default"</b> for a step.</p>
+							<p>
+								11. <b>"No selected items by default"</b> overwrites the previous two settings at all.
+							</p>
+							<p>12. <b>"Default product quantity"</b> settings changes products quantity input default value.</p>
+							<p>
+								13. <b>"Minimum products selected"</b> setting indicates how many products should be selected to
+								move to the next step.
+								<br>
+							</p>
+							<p>
+								14. <b>"Maximum products selected"</b> setting limits how many products might be selected to
+								move to the next step.
+							</p>
+							<p>15. <b>"Minimum product quantity"</b> settings change the minimum product quantity input value.</p>
+							<p>16. <b>"Maximum product quantity"</b> settings change the maximum product quantity input value.</p>
+							<p class="notice">
+								If these two settings have equal values then the quantity input might be hidden at all.
+							</p>
+							<p>
+								17. <b>"Minimum total products quantity"</b> settings indicates how many products quantity
+								must be selected to move to the next step, i.e. the sum of selected product quantities.
+							</p>
+							<p>
+								18. <b>"Maximum total products quantity"</b> settings indicates how many products quantity
+								can be selected to move to the next step, i.e. the sum of selected product quantities.
+							</p>
+							<div class="notice">
+								<p>These six min/max options might have one of five possible types:</p>
+
+								<ul>
+									<li><b>Simple count</b> - a static count value;</li>
+									<li><b>Count of selected products of step</b> - count of selected products from the other steps;</li>
+									<li><b>Least product quantity of step</b> - the smallest quantity input value from the other steps products;</li>
+									<li><b>Greatest product quantity of step</b> - the greatest quantity input value from the other steps products;</li>
+									<li><b>Sum of products quantities of step</b> - the sum of quantity input values from the other steps products.</li>
+								</ul>
+
+								<p>
+									To use other steps types set steps IDs separated by a comma as an option's value.
+									You can find these IDs before the titles of steps list in the "Basic" group.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="section">
+					<h5 id="post-settings-step-view">View</h5>
+					<div class="row">
+						<div class="col col-lg-6">
+							<img src="assets/images/post-step-view-settings.png" alt="Step view settings"/>
+						</div>
+						<div class="col col-lg-6">
+							<p>
+								1. <b>"Template"</b> setting change layout of products in the current tab.
+								The list is formed of the php-files in the
+								<br>
+								<code>"plugin directory/views/form/layouts"</code> and<br>
+								<code>"theme directory/woocommerce-products-wizard/form/layouts"</code> folders.
+							</p>
+							<p>
+								2. <b>"Grid column"</b> setting changes "grid" template settings for different screen size.
+								It based on 12 columns system and four sizes and each value is the part of these 12 columns.
+								For example, for three columns value should be 4 (is 12/3).
+							</p>
+							<p>
+								3. <b>"Grid column then the sidebar is showed"</b> is the same as <b>"Grid column"</b> but then
+								the sidebar is apparent.
+							</p>
+							<p>
+								4. <b>"Item template"</b> setting change view of products in the current tab.
+								The list is formed of the php-files in the
+								<br>
+								<code>"plugin directory/views/form/item"</code> and
+								<br>
+								<code>"theme directory/woocommerce-products-wizard/form/item"</code> folders.
+							</p>
+							<p>
+								5. <b>Merge thumbnail with gallery</b> setting removes the galleries from item views and
+								shows gallery images within thumbnail using carousel.
+							</p>
+							<p>6. <b>"Gallery column"</b> setting is the same as <b>"Grid column"</b> but for item's gallery grid.</p>
+							<p>7. <b>"Variation template"</b> setting change the layout of the variable products options list.</p>
+							<p>8. <b>"Enable title link"</b> setting wraps product titles by their links to single pages.</p>
+							<p>9. <b>"Show product tags"</b> setting output the float product tag labels above the thumbnail.</p>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<h5 id="post-settings-step-filters">Filters</h5>
+					<div class="row">
+						<div class="col col-lg-6">
+							<figure>
+								<img src="assets/images/post-step-filters-settings.png" alt="Step filters settings" />
+								<figcaption>Step filters settings</figcaption>
+							</figure>
+							<figure>
+								<img src="assets/images/post-step-filter-settings-modal.png" alt="Step filter settings modal" />
+								<figcaption>Step filter settings modal</figcaption>
+							</figure>
+						</div>
+						<div class="col col-lg-6">
+							<p>
+								1. <b>"Filters"</b> setting allows adding different product filters to the step. You can add any
+								number of filters to the step. Select one of prepared sources at first and then one of
+								the suggested views.
+							</p>
+							<p>
+								There is a possibility to select "range" view for a product attribute, but keep in mind it will work well only with numeric attribute values.
+							</p>
+							<p>Each filter will be labeled automatically or you can pre-define its name.</p>
+							<p>
+								This is possible to include/exclude specific value for taxonomy-based filters, like
+								categories, tags and attributes. Define the required terms IDs separated by a comma.
+							</p>
+
+							<p>
+								2. <b>"Filter position"</b> might be right before the products or in the sidebar. But
+								keep in mind sidebar filter will work only for the tabs mode.
+							</p>
+
+							<p>
+								3. <b>"Expand filter by default"</b> output the filter opened then the step is shown.
+							</p>
+
+							<p>
+								4. For the image viewed filters set the <b>thumbnail size</b> setting. It might be one of the
+								registered named sizes or a pair of integers separated by a comma, like "50,50".
+							</p>
+						</div>
+					</div>
+				</section>
+			</article>
+		</section>
+		<section class="section">
+			<h3 id="product-settings"><strong>D) Product Settings</strong> - <a href="#toc">top</a></h3>
+			<div class="row">
+				<div class="col col-lg-6">
+					<img src="assets/images/product-settings.png" alt="Product settings" />
+				</div>
+				<div class="col col-lg-6">
+					<p>
+						1. <b>"Availability rules"</b> is a unified and complex setting to control the product
+						appearance in the wizard. The <b>source</b> of a rule might be a product, product variation,
+						product attribute, product category or custom input value.
+					</p>
+					<p>
+						There are two possible <b>conditions</b> for a rule: "in cart" and "not in the cart".
+						So this is possible to check if a product, category, or custom field is added or not
+						added to the cart to show the product.
+					</p>
+					<p>
+						This is possible to choose a few products, attributes or categories per one rule. There is a setting
+						to control the <b>relation within the items</b>. The rule can be met when <b>all</b> or
+						<b>any</b> of these items are in or not in the cart.
+					</p>
+					<p>
+						For using the product attribute select it at first in the dropdown field and define
+						attribute values terms IDs (not slugs) separated by a comma in the next text input.
+						<a href="https://www.wpbeginner.com/beginners-guide/how-to-find-post-category-tag-comments-or-user-id-in-wordpress/#:~:text=How%20to%20Find%20Your%20WordPress%20Category%20ID%20and%20Tag%20ID?" target="_blank" rel="nofollow noopener">Here how you can find them.</a>
+					</p>
+					<p>
+						Moreover, there is a setting to control the <b>relationship of the rule with the
+						next rule</b>, namely any of the rules should be met or few at once.
+					</p>
+					<p>You can also set <b>availability rules for each variation</b> of a variable product.</p>
+					<p>
+						2. <b>"Variation view"</b> setting change layout of the variable product options list above category settings.
+					</p>
+					<p>
+						3. You can add a <b>Discount</b> to the product bought using a wizard. Possible values are:
+					</p>
+					<ul>
+						<li><b>Percentage</b> - define a value from 1 to 100 in percents to make appropriate discount;</li>
+						<li><b>Fixed</b> - define a value on which product price will be reduced;</li>
+						<li><b>Precise price</b> - overwrites product's price by the defined one.</li>
+					</ul>
+					<p>
+						4. This is possible to <b>Attach a wizard to the product</b> to make it works as a usual composite product.
+					</p>
+					<p>
+						5. <b>Attached wizard place</b> allows to output the wizard:
+					</p>
+					<ul>
+						<li>Before add-to-cart form;</li>
+						<li>After add-to-cart form;</li>
+						<li>In a special separate tab.</li>
+					</ul>
+					<p>
+						6. Set the <b>Separate tab title</b> if you need.
+					</p>
+					<p>
+						7. You can use a special feature to intercept the added to cart product and continue the workflow in
+						a wizard on another page immediately.
+					</p>
+					<p>
+						First of all, select a value of the <b>Redirect to the wizard on add to cart event</b> setting.
+					</p>
+					<p>
+						8. Secondly, define a <b>Redirect link</b> which will be opened after add to cart event for this product.
+					</p>
+					<p>
+						9. Set a <b>Wizard's step ID</b> in which the product should be added. If you want the product will be out of any step then set it to any out of steps IDs value.
+					</p>
+					<p>
+						10. <b>Generate thumbnail areas data</b> is used to replace generated thumbnail areas with specific
+						images then the product is in the cart. It's necessary to define the <b>area name</b>
+						to be used and the <b>image</b> for pasting.
+						It's also possible to set the <b>availability rules</b> to apply the image to an area.
+						The number of these rules is unlimited.
+					</p>
+					<p>
+						You can also set the <b>areas data</b> of each variation of a variable product.
+					</p>
+					<p>
+						More info about the thumbnail generation is <a href="#post-settings-thumbnail">here</a>.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="section">
+			<h3 id="category-settings"><strong>E) Category Settings</strong> - <a href="#toc">top</a></h3>
+			<div class="row">
+				<div class="col col-lg-6">
+					<img src="assets/images/category-settings.png" alt="Category settings" />
+				</div>
+				<div class="col col-lg-6">
+					<p>
+						1. <b>"Availability rules"</b> is a unified and complex setting to control category products
+						appearance in the wizard. The <b>source</b> of a rule might be a product, product variation,
+						product attribute, product category or custom input value.
+					</p>
+					<p>
+						There are two possible <b>conditions</b> for a rule: "in cart" and "not in the cart".
+						So this is possible to check if a product, attribute, category, or custom field is added or not
+						added to the cart to show the category products.
+					</p>
+					<p>
+						This is possible to choose a few products, attributes or categories per one rule. There is a setting
+						to control the <b>relation within the items</b>. The rule can be met when <b>all</b> or
+						<b>any</b> of these items are in or not in the cart.
+					</p>
+					<p>
+						For using the product attribute select it at first in the dropdown field and define
+						attribute values terms IDs (not slugs) separated by a comma in the next text input.
+						<a href="https://www.wpbeginner.com/beginners-guide/how-to-find-post-category-tag-comments-or-user-id-in-wordpress/#:~:text=How%20to%20Find%20Your%20WordPress%20Category%20ID%20and%20Tag%20ID?" target="_blank" rel="nofollow noopener">Here how you can find them.</a>
+					</p>
+					<p>
+						Moreover, there is a setting to control the <b>relationship of the rule with the
+						next rule</b>, namely any of the rules should be met or few at once.
+					</p>
+					<p>
+						2. You can add a <b>Discount</b> to category products bought using a wizard. Possible values are:
+					</p>
+					<ul>
+						<li><b>Percentage</b> - define a value from 1 to 100 in percents to make appropriate discount;</li>
+						<li><b>Fixed</b> - define a value on which products prices will be reduced;</li>
+						<li><b>Precise price</b> - overwrites products prices by the defined one.</li>
+					</ul>
+					<p>
+						3. This is possible to <b>Attach a wizard to the product</b> to make it works as a usual composite product.
+					</p>
+					<p>
+						4. <b>Attached wizard place</b> allows to output the wizard:
+					</p>
+					<ul>
+						<li>Before add-to-cart form;</li>
+						<li>After add-to-cart form;</li>
+						<li>In a special separate tab.</li>
+					</ul>
+					<p>
+						5. Set the <b>Separate tab title</b> if you need.
+					</p>
+					<p>
+						6. You can use a special feature to intercept the added to cart product and continue the workflow in
+						a wizard on another page immediately.
+					</p>
+					<p>
+						First of all, select a value of the <b>Redirect to the wizard on add to cart event</b> setting.
+					</p>
+					<p>
+						7. Secondly, define a <b>Redirect link</b> which will be opened after add to cart event for this category.
+					</p>
+					<p>
+						8. Set a <b>Wizard's step ID</b> in which the product should be added. If you want the product will be out of any step then set it to any out of steps IDs value.
+					</p>
+					<p>
+						9. <b>Generate thumbnail areas data</b> is used to replace generated thumbnail areas with specific
+						images then any product of the category is in the cart. It's necessary to define the <b>area name</b>
+						to be used and the <b>image</b> for pasting.
+						It's also possible to set the <b>availability rules</b> to apply the image to an area.
+						The number of these rules is unlimited.
+					</p>
+					<p>
+						More info about the thumbnail generation is <a href="#post-settings-thumbnail">here</a>.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section>
+			<h3 id="call-form"><strong>F) Call a form</strong> - <a href="#toc">top</a></h3>
+
+			<p>
+				To call the wizard use <code>[woocommerce-products-wizard id="%POST_ID%"]</code> shortcode with the id attribute in the page content.
+				You can find it on the wizard edit page on the string "Using".
+			</p>
+
+			<p>
+				Also you can use the "<code>WCProductsWizard\Template::html('app', ['id' => %POST_ID%])</code>" string in the php-file.
+			</p>
+
+			<p>You can send the attributes as string in the shortcode or as an associative array in the method arguments.</p>
+		</section>
+		<section>
+			<h3 id="custom-fields"><strong>G) How to add custom products/steps fields</strong> - <a href="#toc">top</a></h3>
+
+			<p>Sometimes you might need to get some custom data passed by the customers, e.g. custom text, number, file, and so on. There are a couple of different ways to achieve this.</p>
+
+			<p>
+				The first one is using the <a href="https://codecanyon.net/item/woocommerce-extra-product-options/7908619" rel="nofollow noopener" target="_blank">Extra Product Options</a> plugin which is compatible with the wizard. It allows to add custom fields to any product. This is necessary to check a couple of settings to make it work. See the <a href="#epo-settings">Extra Product Options Settings</a> section.
+			</p>
+
+			<p>
+				The second way is to add custom fields to a step using the wizard’s possibilities. Take a look at
+				the <a href="#post-settings-step-captions">Description</a> setting section.
+				For usual WooCommerce order workflow this is necessary to combine the products to <a href="#post-settings-kits">kits</a>
+				to save this custom data in orders. Otherwise, if you get your orders using a contact form with the PDF you
+				don't need to use kits, because custom data will be disclosed in the PDF.
+			</p>
+		</section>
+		<section>
+			<h3 id="epo-settings"><strong>H) Extra Product Options Settings</strong> - <a href="#toc">top</a></h3>
+
+			<p>
+				To make the wizard work with Extra Product Options plugin be sure its settings are:
+			</p>
+
+			<ul>
+				<li>
+					<b>General - Various - Enable plugin for WooCommerce shortcodes</b> is ticked;
+				</li>
+				<li>
+					<b>Global - Product page - Reset option values after the product is added to the cart</b> is not ticked;
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h3 id="templates-customization"><strong>I) Templates Customization</strong> - <a href="#toc">top</a></h3>
+
+			<p>
+				If you want to customize some views of the plugin and don't lose these changes while updating the plugin
+				create "woocommerce-products-wizard" folder in your active theme directory and copy into it files
+				from the plugin's "views" directory saving the sub-directory hierarchy.
+			</p>
+			<p>
+				The plugin trying to get a view from the theme at first, and if it doesn't find this view, it gets the
+				view from itself directory.
+			</p>
+		</section>
+		<section>
+			<h3 id="php-filters"><strong>J) PHP actions and filters</strong> - <a href="#toc">top</a></h3>
+
+			<details>
+				<summary>Actions</summary>
+				<table style="font-size: 14px;">
+					<thead>
+						<tr>
+							<th>Action</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>do_action('wcProductsWizardInit', $this)</th>
+							<td>The plugin is init</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardStepSettingsForm', $this, $args)</th>
+							<td>Before step settings form HTML in the admin part</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardGetCart', $postId, $args)</th>
+							<td>Before cart get</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeAddToCart', $postId, $cartItemKey, $cartItem)</th>
+							<td>Before item is added to cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterAddToCart', $postId, $cartItemKey, $cartItem)</th>
+							<td>After item is added to cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeRemoveByProductId', $postId, $productId, $stepId)</th>
+							<td>Before removing a product from cart by ID</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterRemoveByProductId', $postId, $productId, $stepId)</th>
+							<td>After removing a product from cart by ID</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeRemoveByVariation', $postId, $variationId, $variation, $stepId)</th>
+							<td>Before removing product from cart by variation</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterRemoveByVariation', $postId, $variationId, $variation, $stepId)</th>
+							<td>After removing product from cart by variation</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeRemoveByProductKey', $postId, $key)</th>
+							<td>Before removing a product from cart by key</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterRemoveByProductKey', $postId, $key)</th>
+							<td>After removing a product from cart by key</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeRemoveByStepId', $postId, $stepId)</th>
+							<td>Before removing an item from cart by step ID</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterRemoveByStepId', $postId, $stepId)</th>
+							<td>After removing an item from cart by step ID</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeTruncate', $postId)</th>
+							<td>Before truncating of the cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterTruncate', $postId)</th>
+							<td>After truncating of the cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeOutput', ['id' => $id])</th>
+							<td>Before wizard's output via shortcode, views or PDF</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardDomPDFOptions', $options, $id)</th>
+							<td>DomPDF options instance</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardDomPDFInstance', $dompdf, $id)</th>
+							<td>DomPDF instance</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterOutput', ['id' => $id])</th>
+							<td>After wizard's output via shortcode, views or PDF</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeSubmitForm', $args)</th>
+							<td>Before main form submit</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterSubmitForm', $args)</th>
+							<td>After main form submit</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeGetForm', $args)</th>
+							<td>Before main form get</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterGetForm', $args)</th>
+							<td>After main form get</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeSkipForm', $args)</th>
+							<td>Before main form skip</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterSkipForm', $args)</th>
+							<td>After main form skip</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeSkipAll', $args)</th>
+							<td>Before main form "skip all"</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterSkipAll', $args)</th>
+							<td>After main form "skip all"</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeResetForm', $args)</th>
+							<td>Before main form reset</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterResetForm', $args)</th>
+							<td>After main form reset</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeAddCartProduct', $args)</th>
+							<td>Before add product to cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeRemoveCartProduct', $args)</th>
+							<td>Before removing a product from cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeUpdateCartProduct', $args)</th>
+							<td>Before update product in cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeAddAllToMainCart', $postId, $cart)</th>
+							<td>Before passing the products to Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardAfterAddAllToMainCart', $postId, $cart, $productsAdded)</th>
+							<td>After passing the products to Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>do_action('wcProductsWizardBeforeAddToMainCart', $args)</th>
+							<td>Before passing the product to Woocommerce cart</td>
+						</tr>
+					</tbody>
+				</table>
+			</details>
+
+			<details>
+				<summary>Filters</summary>
+				<table style="font-size: 14px;">
+					<thead>
+						<tr>
+							<th>Action</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>apply_filters('wcProductsWizardPostTypeArgs', $args);</th>
+							<td>Wizard post type arguments</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCustomStylesVariables', $customVariables);</th>
+							<td>Style custom variables array for overwriting and compiling</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardDefaultCartContent', $defaultCartContent, $postId, $args);</th>
+							<td>Getting default cart content</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCart', $cart, $postId, $args);</th>
+							<td>Getting cart content</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartStepData', $item, $postId, $key);</th>
+							<td>Getting cart step data item</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartStepDataImageAttributes', $attributes, $postId, $item, $key);</th>
+							<td>Image attributes of a cart step data item</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartProductsAndVariationsIds', $output, $postId, $args);</th>
+							<td>Getting products and variations IDs from the cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartCategoriesIds', $output, $postId, $args);</th>
+							<td>Getting categories IDs from the cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartAttributeValues', $output, $postId, $attribute, $args);</th>
+							<td>Getting product attribute values IDs from the cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartByStepId', $output, $postId, $stepId);</th>
+							<td>Getting cart content by step ID</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartItemByKey', $output, $postId, $key);</th>
+							<td>Getting cart item by key</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartProductById', $output, $postId, $productId, $stepId);</th>
+							<td>Getting a product from cart by ID and optionally by step ID</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartStepDataByKey', $output, $postId, $key, $stepId);</th>
+							<td>Getting a custom field from cart by key and optionally by step ID</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardAddToCartItem', $cartItem, $postId, self::$sessionKey);</th>
+							<td>Product data for adding to cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartTotal', $output, $postId);</th>
+							<td>Getting cart total amount</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartItemPrice', $price, $item);</th>
+							<td>Getting cart item price</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartKitChildValueParts', $output, $wizardId);</th>
+							<td>Combined kit child value string parts</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartKitChildDisplay', $output, $wizardId);</th>
+							<td>Combined kit child displayed value string parts</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardKitChildData', $array);</th>
+							<td>Combined kit child meta data</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardSubTerms', $output, $termId, $taxonomy);</th>
+							<td>Child terms of a term array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPriceLimits', $output, $postId, $stepId);</th>
+							<td>Min/max prices of products for a step</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardSendJSONData', $data);</th>
+							<td>Sending JSON response data</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardResultPDFInstance', $dompdf, $id);</th>
+							<td>DomPDF instance of wizard</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardResultPDFileName', $output);</th>
+							<td>DomPDF file name</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardResultPDFile', $array, $id);</th>
+							<td>DomPDf file data array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFormAjaxActions', $ajaxActions);</th>
+							<td>Pairs of JS action and PHP handles for AJAX</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepQuantitiesRule', (int) $output, $postId, $rule);</th>
+							<td>Some of step's products quantity rules</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardSubmitFormItemData', $data, $args);</th>
+							<td>Add item to cart data from the main form submit event</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPreventFinalRedirect', false, $postData);</th>
+							<td>Prevents the final redirect</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepsIds', $stepsIds, $postId);</th>
+							<td>Prepared form steps IDs array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardSteps', $steps, $postId);</th>
+							<td>Prepared form steps array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStep', $output, $postId, $stepId);</th>
+							<td>Step data array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardActiveStepId', $output, $postId);</th>
+							<td>Active step ID</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardActiveStep', $activeStep, $postId);</th>
+							<td>Active step array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPaginationArgs', $paginationArgs, $args);</th>
+							<td>Step pagination arguments</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPaginationItems', $output, $args);</th>
+							<td>Step pagination items array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardNavItems', $navItemsCache[$postId], $postId);</th>
+							<td>Steps navigation items array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFilterFields', $output, $postId, $stepId, $appliedFilters);</th>
+							<td>Step filters array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardRedirectToWizardLink', $link, $wizardId, $cartItemKey, $productData);</th>
+							<td>Redirect link to a wizard after add to cart action</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardRedirectToWizardProductData', $productData, $wizardId, $cartItemKey);</th>
+							<td>Product data of a wizard after add to cart action (before redirect)</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardVariationArguments', $output, $arguments);</th>
+							<td>Product variations data</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductsRequestArgs', $output, $productsIds, $filter);</th>
+							<td>Products request args of a step</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardAddAllToMainCartItems', $cart, $postId);</th>
+							<td>Items on a passing to Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardKitId', date('d-m-Y H:i:s'), $postId, $cart);</th>
+							<td>ID of the kit on a passing to Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardKitTitle', get_the_title($postId), $postId, $cart);</th>
+							<td>Title of the kit on a passing to Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>$productData = apply_filters('wcProductsWizardKitBaseProductData', $productData, $postId, $cart);</th>
+							<td>Data of the admin defined base kit product</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMainCartProductData', $productData, $postId, $cartItem);</th>
+							<td>Add products to main cart loop item data</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMergeCartQuantity', false, $args));</th>
+							<td>Is necessary to merge the same product quantity in Woocommerce cart</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepProductsQueryArgs', $queryArgs, $postId, $stepId, $filter);</th>
+							<td>Step products request query array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductAvailability', $isAvailable, $productId, $postId, $stepId, $args);</th>
+							<td>Product availability in the wizard value</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepProductsIds', $productsIds, $postId, $stepId, $args);</th>
+							<td>Array of products IDs of a step</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardSettingsModels', $modelCache);</th>
+							<td>Get all settings models array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardGlobalSettingsModel', $global);</th>
+							<td>Array of the plugin global settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPostSettingsModel', $post);</th>
+							<td>Array of a wizard post settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepSettingsModel', $step);</th>
+							<td>Array of a wizard step settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductSettingsModel', $product);</th>
+							<td>Array of a product settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductVariationSettingsModel', $productVariation);</th>
+							<td>Array of a product variation settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductCategorySettingsModel', $productCategory);</th>
+							<td>Array of a product category settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductAttributeSettingsModel', $productAttribute);</th>
+							<td>Array of a product atribute settings model</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardGlobalSetting', $value $setting);</th>
+							<td>Get one global setting value</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPostSetting', $value, $id, $setting, $modelSource);</th>
+							<td>Get one wizard's setting value</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardPostSettings', $output, $id, $args);</th>
+							<td>Get all wizard's settings values</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepsIdsSetting', $stepsIdsCache[$id], $id);</th>
+							<td>Wizard's steps IDs array from DB</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepSettings', $stepsSettingsCache[$id], $id);</th>
+							<td>Get all step setting values</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepSetting', $value, $id, $stepId, $setting);</th>
+							<td>Get one step setting value</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepSettings', $output, $id, $args);</th>
+							<td>Get one step settings array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardProductCategorySetting', $value, $id, $setting);</th>
+							<td>Get one product category setting value</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardIsSidebarShowed', $show, $id);</th>
+							<td>Is sidebar showed state</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFinalRedirectUrl', $url, $id);</th>
+							<td>Getting the final redirect URL</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFilterSourcesList', $output);</th>
+							<td>Step filter sources array</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMinimumProductsSelectedMessage', $message, $id, $limit, $value);</th>
+							<td>Minimum products selected error message</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMaximumProductsSelectedMessage', $message, $id, $limit, $value);</th>
+							<td>Maximum products selected error message</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMinimumProductsPriceMessage', $message, $id, $limit, $value);</th>
+							<td>Minimum products price error message</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardMaximumProductsPriceMessage', $message, $id, $limit, $value);</th>
+							<td>Maximum products price error message</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFormTemplateName', $template, $postId, $stepId);</th>
+							<td>Form step current template name</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFormTemplates', $templates);</th>
+							<td>Available form step templates</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFormItemTemplates', $templates);</th>
+							<td>Available form item templates</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardVariationsTypeTemplates', $templates);</th>
+							<td>Available form item variation templates</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFormItemTemplateName', $template, $postId, $stepId);</th>
+							<td>Form item current template name</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardNavListTemplates', $templates);</th>
+							<td>Available steps navigation templates</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardTemplateHTMLPath', $path, $name, $arguments, $settings);</th>
+							<td>Requested template path</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardStepInputShortCodeUnsupportedTypes', $unsupportedTypes);</th>
+							<td>List of unsupported step input types using the short-code</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardFilterArgsToQuery', $output, $filter);</th>
+							<td>WP_Query ready filter arguments</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartItemGeneratedThumbnailAttributes', $attributes, $itemData)</th>
+							<td>Cart product generated thumbnail image attributes filter</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardCartItemGeneratedThumbnail', $output, $itemData)</th>
+							<td>Cart product generated thumbnail image filter</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardGeneratedThumbnailCartAreas', $cartAreas, $id, $cart)</th>
+							<td>Collected cart areas for thumbnail generation</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardGeneratedThumbnailData', $output, $id, $cart)</th>
+							<td>Generated thumbnail URL and path</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardOrderItemGeneratedThumbnailAttributes', $attributes, $itemData)</th>
+							<td>Order item generated thumbnail image attributes in the admin part</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardOrderItemGeneratedThumbnail', $output, $itemData)</th>
+							<td>Order item generated thumbnail image in the admin part</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardResultItemThumbnail', $thumbnail, $cartItem, $cartItemKey)</th>
+							<td>Results table product thumbnail image filter</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardWidgetItemThumbnail', $thumbnail, $cartItem, $cartItemKey)</th>
+							<td>Widget product thumbnail image filter</td>
+						</tr>
+						<tr>
+							<th>apply_filters('wcProductsWizardWidgetGeneratedThumbnailAttributes', $attributes, $id, $cart)</th>
+							<td>Widget generated thumbnail image attributes</td>
+						</tr>
+					</tbody>
+				</table>
+			</details>
+		</section>
+		<section>
+			<h3 id="php-tricks"><strong>K) PHP helpful tricks</strong> - <a href="#toc">top</a></h3>
+
+			<section class="section">
+				<h4 id="php-tricks-custom-filters">1. Add custom product filters to a step</h4>
+
+				<p>
+					If you want to allow the products filtering by custom fields then this is necessary to use two
+					hooks for this. The first one is used to add filter instances for the further work. They are
+					arrays with keys within, namely:
+				</p>
+
+				<ul>
+					<li>label - Filter's name for output on the front part;</li>
+					<li>key - Inner key for using;</li>
+					<li>view - A filter view name supported by a wizard by default or custom one;</li>
+					<li>value - Current value of the only field (like text input) or null;</li>
+					<li>values - Array of possible values of the filter.</li>
+				</ul>
+
+				<p>The second hook is for handling the passed values to use for WP_Query arguments.</p>
+
+				<p>
+					Here is an example of using YITH brands taxonomy as a product filter within the #123 wizard
+					for the 1 and 2 steps:
+				</p>
+
+<pre><code class="php">&lt;?php
+// add custom filters to output on the front part
+add_filter('wcProductsWizardFilterFields', function ($output, $postId, $stepId, $appliedFilters) {
+    // add only for specific wizard ID and steps IDs
+    if ($postId == 123 && in_array($stepId, [1, 2])) {
+        $label = 'Brands'; // filter name
+        $view = 'checkbox'; // required view
+        $key = 'yith_product_brand'; // taxonomy to use
+        $values = [];
+
+        // collect terms as values
+        $terms = get_terms(['taxonomy' => $key]);
+
+        foreach ($terms as $term) {
+            $values[] = [
+                'id' => $term->term_id,
+                'name' => $term->name,
+                'isActive' => isset($appliedFilters[$key]) && in_array($term->term_id, $appliedFilters[$key])
+            ];
+        }
+
+        $output[] = [
+            'label' => $label,
+            'key' => $key,
+            'view' => $view,
+            'value' => isset($appliedFilters[$key]) ? $appliedFilters[$key] : null,
+            'values' => $values
+        ];
+    }
+
+    if ($postId == 321 && in_array($stepId, [4, 5])) {
+        // other filters here...
+    }
+
+    return $output;
+}, 10, 4);
+
+// handle passed filters to query args
+add_filter('wcProductsWizardFilterArgsToQuery', function ($output, $filter) {
+    foreach ($filter as $key => $value) {
+        // add query arg by the custom taxonomy
+        if ($key == 'yith_product_brand' && !empty($value)) {
+            $output['tax_query'][] = [
+                'taxonomy' => $key,
+                'field' => 'id',
+                'terms' => $value,
+                'operator' => 'IN'
+            ];
+        }
+
+        // other filters here...
+    }
+
+    return $output;
+}, 10, 2);
+?>
+</code></pre>
+			</section>
+			<section class="section">
+				<h4 id="php-tricks-hide-product">2. Hide products from shop</h4>
+
+				<p>
+					If you need to make some products available only within a wizard the lower code can help you with it. It adds an extra checkbox on the "Inventory" product tab. If it is ticked then WooCommerce will skip this product from the query, but the wizard ignores this option.
+				</p>
+
+<pre><code class="php">&lt;?php
+// add extra field
+add_action('woocommerce_product_options_stock_status', function () {
+    woocommerce_wp_checkbox(array(
+        'id' => '_is_hidden_product',
+        'wrapper_class' => 'show_if_simple show_if_variable',
+        'label' => 'Hide Product From Shop'
+    ));
+});
+
+// save post
+add_action('woocommerce_admin_process_product_object', function ($product) {
+    if (isset($_POST['_is_hidden_product'])) {
+        $product->update_meta_data('_is_hidden_product', 'yes');
+    } else {
+        $product->delete_meta_data('_is_hidden_product');
+    }
+});
+
+// modify query
+add_action('woocommerce_product_query', function ($query) {
+    $meta_query = $query->get('meta_query');
+    $meta_query[] = array('key' => '_is_hidden_product', 'compare' => 'NOT EXISTS');
+    $query->set('meta_query', $meta_query);
+});
+?>
+</code></pre>
+			</section>
+			<section class="section">
+				<h4 id="php-tricks-coupons-for-discounted-products">3. Don't apply coupons to products with a wizard discount</h4>
+
+				<p>
+					If products from your wizard already have a discount and you don't want coupons can reduce their
+					price more add this extra code to your site.
+				</p>
+
+<pre><code class="php">&lt;?php
+// skip wizard's discounted products for coupons
+add_filter('woocommerce_coupon_get_discount_amount', function ($discount, $priceToDiscount, $object) {
+    if (isset($object['wcpw_id'])
+        && (isset($object['wcpw_discount'])
+            || isset($object['wcpw_category_discount'])
+            || isset($object['wcpw_product_discount']))
+    ) {
+        return 0;
+    }
+
+    return $discount;
+}, 10, 3);
+?>
+</code></pre>
+			</section>
+		</section>
+		<section>
+			<h3 id="js-actions"><strong>L) JS actions</strong> - <a href="#toc">top</a></h3>
+			<details>
+				<summary>Expand</summary>
+				<table style="font-size: 14px;">
+					<thead>
+						<tr>
+							<th>Action</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th>this.$document.trigger('launched.wcProductsWizard', [this]);</th>
+							<td>On wizard init</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('ajaxRequest.wcProductsWizard', [this, formData]);</th>
+							<td>Before wizard AJAX query</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('ajaxCompleted.wcProductsWizard', [this, response]);</th>
+							<td>On wizard AJAX success query</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('addToMainCart.wcProductsWizard', [this, data, result]);</th>
+							<td>On add to main cart</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('addToMainCart.error.wcProductsWizard', [this, data, response]);</th>
+							<td>Add to main cart error</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('addToMainCartRedirect.wcProductsWizard', [this, data, response]);</th>
+							<td>On doing the final redirect</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('submit.wcProductsWizard', [this, data]);</th>
+							<td>On form submit</td>
+						</tr>
+						<tr>
+							<th>this.$document.trigger('submit.error.wcProductsWizard', [this, data]);</th>
+							<td>Form submit error</td>
+						</tr>
+					</tbody>
+				</table>
+			</details>
+		</section>
+		<section>
+			<h3 id="js-tricks"><strong>M) JS helpful tricks</strong> - <a href="#toc">top</a></h3>
+
+			<p>
+				Here is the list of some Javascript codes to change the wizard's behavior.
+				There are many ways to add them to your site. You can use some plugins to add extra scripts, for example
+				<a href="https://wordpress.org/plugins/custom-css-js/" rel="nofollow noopener" target="_blank">Simple Custom CSS and JS</a>.
+				Also, some themes provides text fields for custom codes for using.
+				Or you can add extra scripts right in theme's javascript files, but it's better to do only for the
+				child themes because you can loose the changes you made while theme update.
+			</p>
+
+<pre><code class="javascript">// submit wizard on any product variation change
+jQuery(document).on('change', '[data-component~="wcpw-product-variations-item-input"]', function () {
+    jQuery(this).closest('[data-component~="wcpw"]').data('wcpw').submit();
+});
+
+// add/remove product in cart once it is chosen
+jQuery(document).on('change', '[data-component~="wcpw-product-choose"]', function () {
+    var $input = jQuery(this);
+    var $wcpw = $input.closest('[data-component~="wcpw"]');
+
+    if ($input.attr('type') === 'checkbox') {
+        if ($input.prop('checked')) {
+            $wcpw.data('wcpw').addCartProduct({productToAddKey: $input.data('step-id') + '-' + $input.val()});
+        } else {
+            $wcpw.data('wcpw').removeCartProduct({
+                productCartKey: $input.closest('[data-component~="wcpw-product"]').data('cart-key')
+            });
+        }
+    } else {
+        $wcpw.data('wcpw').addCartProduct({productToAddKey: $input.data('step-id') + '-' + $input.val()});
+    }
+});
+
+// submit filter on change immediately
+jQuery(document).on('change', '[data-component~="wcpw-filter"]', function () {jQuery(this).submit()});
+
+// don't open the image page on thumbnail click
+jQuery(document).on('click', '[data-component="wcpw-product-thumbnail-link"]', function (event) {event.preventDefault()});
+</code></pre>
+		</section>
+
+		<p class="append-bottom alt large"><strong>troll_winner</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+	<script src="assets/highlight/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

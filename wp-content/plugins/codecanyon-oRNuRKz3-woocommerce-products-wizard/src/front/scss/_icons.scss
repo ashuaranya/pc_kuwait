@@ -1,0 +1,92 @@
+@font-face {
+    font-family: woocommerce-products-wizard;
+    src: url(../fonts/icons.ttf);
+    src: url(../fonts/icons.woff2) format("woff2"),
+        url(../fonts/icons.woff) format("woff"),
+        url(../fonts/icons.ttf) format("truetype");
+}
+
+@mixin icon-styles {
+    font-family: woocommerce-products-wizard;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    // speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+    text-decoration: none;
+    text-transform: none;
+    vertical-align: middle;
+}
+
+%icon {
+    @include icon-styles;
+}
+
+@function icon-char($filename) {
+    $char: "";
+
+    @if $filename == angle-left {
+        $char: "\E001";
+    }
+    
+    @if $filename == angle-right {
+        $char: "\E002";
+    }
+    
+    @if $filename == cart-reload {
+        $char: "\E003";
+    }
+    
+    @if $filename == cart {
+        $char: "\E004";
+    }
+    
+    @if $filename == curve-arrow-right {
+        $char: "\E005";
+    }
+    
+    @if $filename == double-angle-right {
+        $char: "\E006";
+    }
+    
+    @if $filename == file {
+        $char: "\E007";
+    }
+    
+    @if $filename == link {
+        $char: "\E008";
+    }
+    
+    @if $filename == pencil {
+        $char: "\E009";
+    }
+    
+    @if $filename == reload {
+        $char: "\E00A";
+    }
+    
+    @if $filename == tick {
+        $char: "\E00B";
+    }
+    
+    @if $filename == trash {
+        $char: "\E00C";
+    }
+    
+
+    @return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+    &::#{$insert} {
+        @if $extend {
+            @extend %icon;
+        } @else {
+            @include icon-styles;
+        }
+
+        content: icon-char($filename);
+    }
+}

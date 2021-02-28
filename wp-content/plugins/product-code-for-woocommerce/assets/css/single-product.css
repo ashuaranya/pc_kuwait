@@ -1,0 +1,14 @@
+.single-product .product_meta .wo_productcode {
+    display: block;
+}
+
+#woocommerce-order-items .woocommerce_order_items_wrapper table.woocommerce_order_items table.display_meta tr th {
+    width: 50% !important;
+}
+.hide_pcode .product-type-variable .product_meta .wo_productcode,
+.hide_pcode .product-type-variable .product_meta .wo_productcode_second{
+    display:none;
+}
+.pcfw_code_wrapper{
+    margin-right: 10px;
+}
