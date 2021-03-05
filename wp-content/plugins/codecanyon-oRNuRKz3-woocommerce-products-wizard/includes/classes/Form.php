@@ -1116,7 +1116,7 @@ class Form
                     $productData['data']['wcpw_is_kit_base'] = (int) ($key == $baseKitItemKey);
                     $productData['data']['wcpw_is_kit_quantity_fixed'] = (int) $isKitQuantityFixed;
                 }
-				
+
                 $productData = apply_filters('wcProductsWizardMainCartProductData', $productData, $id, $cartItem);
                 $cartItemKey = Product::addToMainCart($productData);
 

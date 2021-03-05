@@ -108,7 +108,7 @@ if ($data != null):
                                 <div class="entry-content">
                                     <div class="woocommerce">
                                         <?php
-                                            wc_print_notices();
+                                        wc_print_notices();
                                         ?>
                                         <form
                                                 name="checkout" method="post"

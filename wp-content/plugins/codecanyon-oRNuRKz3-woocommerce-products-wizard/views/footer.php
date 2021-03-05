@@ -8,5 +8,5 @@ use WCProductsWizard\Template;
 $arguments = Template::getHTMLArgs();
 ?>
 <footer class="woocommerce-products-wizard-footer"><?php
-    Template::html('controls/index', $arguments);
+    //Template::html('controls/index', $arguments);
     ?></footer>

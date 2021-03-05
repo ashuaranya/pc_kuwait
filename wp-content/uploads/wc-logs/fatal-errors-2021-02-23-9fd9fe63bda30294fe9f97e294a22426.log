@@ -1,0 +1,9 @@
+2021-02-23T19:33:41+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+

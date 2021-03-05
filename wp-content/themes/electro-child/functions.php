@@ -165,13 +165,12 @@ function start_session() {
 
 
 
-
 add_action( 'woocommerce_cart_calculate_fees', 'custom_fee_based_on_cart_total', 10, 1 );
 function custom_fee_based_on_cart_total( $cart ) {
-    if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;
-    global $wpdb;
-    $table = $wpdb->prefix.'charges';
-    $sql = $wpdb->get_results("SELECT * FROM $table");
+    if ( is_admin() && ! defined( 'DOING_AJAX' ) ) return;	
+	global $wpdb;
+	$table = $wpdb->prefix.'charges';
+	$sql = $wpdb->get_results("SELECT * FROM $table");
     if(array_key_exists("customize_pc_total", $_SESSION)){
         $final_total = $_SESSION['customize_pc_total'];
         //var_dump($final_total);

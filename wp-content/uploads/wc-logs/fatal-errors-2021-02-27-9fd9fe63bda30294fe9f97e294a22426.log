@@ -1,2 +1,25 @@
-2021-02-27T11:11:58+00:00 CRITICAL Maximum execution time of 600 seconds exceeded in C:\xampp\htdocs\harrison\wp-content\plugins\woocommerce\packages\woocommerce-blocks\src\Payments\Integrations\AbstractPaymentMethodType.php on line 11
+2021-02-27T15:46:16+00:00 CRITICAL Uncaught Error: Call to a member function get_product_price() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/widget.php:202
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/sidebar.php(34): WCProductsWizard\Template::html()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(38): WCProductsWizard\Template::html()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap.. in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/widget.php on line 202
+
+2021-02-27T15:46:25+00:00 CRITICAL Uncaught Error: Call to a member function get_product_price() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/widget.php:202
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/sidebar.php(34): WCProductsWizard\Template::html()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap...')
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/body/tabs.php(38): WCProductsWizard\Template::html()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/includes/classes/Template.php(270): include('/opt/bitnami/ap.. in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/codecanyon-oRNuRKz3-woocommerce-products-wizard/views/widget.php on line 202
+
+2021-02-27T20:45:28+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
 

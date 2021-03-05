@@ -1,0 +1,130 @@
+2021-02-25T14:04:10+00:00 CRITICAL Uncaught Error: Call to undefined method YITH_WAPO_Type::getAllowedGroupToptionsypes() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:427
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocomm in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 427
+
+2021-02-25T14:16:08+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:427
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 427
+
+2021-02-25T14:16:46+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:427
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 427
+
+2021-02-25T14:17:07+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:427
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 427
+
+2021-02-25T14:21:52+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T14:22:02+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T14:22:37+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T14:22:44+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T14:24:12+00:00 CRITICAL Uncaught Error: Call to undefined method stdClass::getId() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+#7 in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T14:30:41+00:00 CRITICAL Uncaught Error: Cannot use object of type stdClass as array in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php:428
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): YITH_WAPO_Frontend->show_product_options()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(484): WP_Hook->do_action()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/templates/single-product/add-to-cart/simple.php(33): do_action()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include('/opt/bitnami/ap...')
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1625): wc_get_template()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): woocommerce_simple_add_to_cart()
+# in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/yith-woocommerce-product-add-ons/includes/classes/class.yith-wapo-frontend.php on line 428
+
+2021-02-25T15:06:52+00:00 CRITICAL Uncaught Error: Call to undefined function push() in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code:31
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1160): getAddOnProduct()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-includes/rest-api.php(354): WP_REST_Server->serve_request()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): rest_api_loaded()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters()
+#6 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(551): WP_Hook->do_action()
+#7 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp.php(388): do_action_ref_array()
+#8 /opt/bitnami/apps/ in /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/code-snippets/php/snippet-ops.php(446) : eval()'d code on line 31
+
+2021-02-25T20:01:19+00:00 CRITICAL Uncaught Error: Call to a member function get() on null in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php:21
+Stack trace:
+#0 /opt/bitnami/apps/wordpress/htdocs/wp-includes/class-wp-hook.php(287): x34fg_gateway_disable_shipping()
+#1 /opt/bitnami/apps/wordpress/htdocs/wp-includes/plugin.php(212): WP_Hook->apply_filters()
+#2 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/includes/class-wc-payment-gateways.php(160): apply_filters()
+#3 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/OnboardingPayments.php(38): WC_Payment_Gateways->get_available_payment_gateways()
+#4 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Notes/NoteTraits.php(74): Automattic\WooCommerce\Admin\Notes\OnboardingPayments::get_note()
+#5 /opt/bitnami/apps/wordpress/htdocs/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Events.php(91): Automattic\WooCommerce\Admin\Notes\Onboardi in /opt/bitnami/apps/wordpress/htdocs/wp-content/themes/electro-child/functions.php on line 21
+
